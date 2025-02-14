@@ -1,9 +1,11 @@
 ## Job Ready AI-Powered Cohort: Complete Web Development + DSA + Aptitude by Sheryians Coding School
 
-### Project Exercise 2 :- Contact Us Form
+### Project Exercise 5: Styling the Contact Us Form (From Project Exercise 2)
 
-- **Topic Covered:** HTML
-- **Description:** Create a "Contact Us" form that includes input fields for name, email, phone number, and a message. The form should have a submit button, and the fields should have basic validation, such as ensuring the name, email, and phone number fields are required before submission. Use appropriate input types and attributes for each field to ensure the form is user-friendly and accessible.
-- **Skills Covered:** Form creation, input elements, form validation, attributes.
+- **Topic Covered:** HTML, CSS
+- **Description:** Enhance the "Contact Us" form created in Project Exercise 2 by applying CSS for better styling. Add hover effects to the submit button to improve user interaction, change the borders of input fields when they are focused, and refine the overall form layout with proper spacing and alignment. Use properties like `border-radius` for rounded corners, padding for inner spacing, and pseudo-classes like `:hover` and `:focus` for interactivity.
+- **Skills Covered:** Advanced form styling, pseudo-classes (`:hover`, `:focus`), border-radius for rounded corners, and using padding to improve form aesthetics.
 
-### [Live Demo](https://basic-contact-us-html-form.netlify.app/)
+### Live Demo
+
+You see a live demo of this (https://stylish-contact-us-form-webwithaman.netlify.app/)

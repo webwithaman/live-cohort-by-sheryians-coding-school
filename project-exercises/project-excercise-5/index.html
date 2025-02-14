@@ -8,19 +8,20 @@
     <!-------------------------------------------------
        Title
     -------------------------------------------------->
-    <title>Title</title>
+    <title>Stylish Contact Us Form</title>
 
-    <!-------------------------------------------------
-       Link Favicon
-    -------------------------------------------------->
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <!---------------------------------------------------
+       Font Awesome CDN using script tag
+    ----------------------------------------------------->
+    <script
+      src="https://kit.fontawesome.com/8769ee6e50.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!---------------------------------------------------
        Link External Custom Style Sheets
     ----------------------------------------------------->
-    <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media-queries.css" />
   </head>
 
   <body>
@@ -28,18 +29,40 @@
        Wrapper Start
     ----------------------------------------------------->
     <div class="wrapper">
-      <form action="">
-        <div class="form-inner-container">
-          <h2>contact us</h2>
-          <ul>
-            <li><input type="text" placeholder="Name" /></li>
-            <li><input type="text" placeholder="Email" /></li>
-            <li><input type="text" placeholder="Mobile Number" /></li>
+      <div class="form-container">
+        <form action="">
+          <h2 class="contact-us-heading">contact us</h2>
+
+          <ul class="input-fields-container">
+            <li>
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="text" required minlength="3" placeholder="Name" />
+            </li>
+
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              ><input type="email" required placeholder="Email" />
+            </li>
+
+            <li>
+              <i class="fa fa-phone" aria-hidden="true"></i
+              ><input
+                type="tel"
+                required
+                minlength="10"
+                placeholder="Mobile Number"
+              />
+            </li>
           </ul>
-          <button>Submit</button>
-        </div>
-      </form>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
     </div>
+
+    <!---------------------------------------------------
+       Wrapper End
+   ----------------------------------------------------->
 
     <!---------------------------------------------------
        Wrapper End

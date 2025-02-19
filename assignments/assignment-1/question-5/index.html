@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Leap Year Checker – Ask the user for a year and determine if
+it's a leap year or not.  -->
+
+    <script>
+      let year = Number(prompt("Enter A Year"));
+
+      if (year % 400 == 0) document.write(`${year} is a Leap Year`);
+      else if (year % 100 != 0 && year % 4 == 0)
+        document.write(`${year} is a Leap Year`);
+      else document.write(`${year} is not a Leap Year`);
+    </script>
+  </body>
+</html>

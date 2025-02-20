@@ -3,36 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>First Non-Repeating Character</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Find First Non-Repeating Character – Ask the user for a word
-and find the first character that does not repeat. Example: hello
-→ h (since e, l, and o repeat).   -->
+    <h1>First Non-Repeating Character</h1>
 
-    <script>
-      let word = prompt("Enter A Word", "hello");
-
-      let i = 0,
-        char;
-      while (word[i]) {
-        char = word[i];
-
-        let j = 0;
-        while (i == j || (word[i] != word[j] && word[j] != undefined)) j++;
-
-        if (word[j] === undefined) break;
-        i++;
-      }
-
-      if (word[i] == undefined)
-        document.write(
-          `<h1>There is no Non-Repeating Character in ${word}</h1>`
-        );
-      else
-        document.write(
-          `<h1>First Non-Repeating Character in ${word} = ${char}</h1>`
-        );
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

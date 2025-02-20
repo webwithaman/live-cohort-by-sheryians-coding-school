@@ -3,35 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Second Largest</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Find Second Largest – Take three numbers as input and find
-the second largest number (without using sort() or Math.max()).   -->
+    <h1>Second Largest</h1>
 
-    <script>
-      let num1 = Number(prompt("Enter First Number"));
-      let num2 = Number(prompt("Enter Second Number"));
-      let num3 = Number(prompt("Enter Third Number"));
-
-      // if (num1 > num2 && num2 > num3)
-      //   document.write(`<h1>${num2} is Second Largest Number</h1>`);
-      // else if (num2 > num1 && num1 > num3)
-      //   document.write(`<h1>${num1} is Second Largest Number</h1>`);
-      // else if (num1 > num3 && num3 > num2)
-      //   document.write(`<h1>${num3} is Second Largest Number</h1>`);
-
-      if (num1 > num2) {
-        if (num2 > num3)
-          document.write(`<h1>${num2} is Second Largest Number</h1>`);
-        else if (num1 > num3)
-          document.write(`<h1>${num3} is Second Largest Number</h1>`);
-        else document.write(`<h1>${num1} is Second Largest Number</h1>`);
-      } else if (num1 > num3)
-        document.write(`<h1>${num1} is Second Largest Number</h1>`);
-      else if (num2 > num3)
-        document.write(`<h1>${num3} is Second Largest Number</h1>`);
-      else document.write(`<h1>${num2} is Second Largest Number</h1>`);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

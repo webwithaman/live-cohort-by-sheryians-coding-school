@@ -3,31 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nested Condition Challenge</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Nested Condition Challenge – Ask the user for their age and
-salary. Print a message based on conditions:
+    <h1>Nested Condition Challenge</h1>
 
-If age is below 18, print “Not eligible”
-
-If age is 18 or more but salary is less than ₹20,000, print “Low
-Salary”
-
-If salary is ₹50,000 or more, print “High Salary”
-
-. Otherwise, print “Medium Salary”  -->
-
-    <script>
-      let userAge = Number(prompt("Enter Your Age"));
-      let userSalary = Number(prompt("Enter Your Salary"));
-
-      if (userAge < 18) document.write("<h1>Not Eligible</h1>");
-      else if (userAge >= 18) {
-        if (userSalary <= 20000) document.write("<h1>Low Salary</h1>");
-        else if (userSalary >= 50000) document.write("<h1>High Salary</h1>");
-        else document.write("<h1>Medium Salary</h1>");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

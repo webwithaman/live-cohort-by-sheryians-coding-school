@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple Login System</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Simple Login System – Set a predefined username and
-password. Ask the user to enter their credentials using
-prompt(). If correct, print “Login Successful”; otherwise, print
-“.” -->
+    <h1>Simple Login System</h1>
 
-    <script>
-      let savedUserName = "webwithaman",
-        savedPassword = "@webwithaman***";
-      let userName = prompt("Enter this Username (webwithaman)");
-      let userPassword = prompt("Enter this Password (@webwithaman***)");
-
-      if (savedUserName == userName && savedPassword == userPassword)
-        document.write(`<h1>Login Successful</h1>`);
-      else document.write(`<h1>Incorrect Username or Password</h1>`);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

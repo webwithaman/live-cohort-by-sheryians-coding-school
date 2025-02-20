@@ -3,24 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Even Digit Counter</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Even Digit Counter – Take a number from the user and count
-how many even digits it has  -->
+    <h1>Even Digit Counter</h1>
 
-    <script>
-      let num = Number(prompt("Enter A Number"));
-
-      let evenDigitsCounter = 0;
-      copyNum = num;
-
-      while (copyNum / 10) {
-        evenDigitsCounter += (copyNum % 10) % 2 == 0 ? 1 : 0;
-        copyNum = parseInt(copyNum / 10);
-      }
-
-      document.write(`<h1>${num} has ${evenDigitsCounter} Even Digits</h1>`);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

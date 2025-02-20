@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Reverse Without String Methods</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Reverse Without String Methods – Ask the user for a number
-and reverse it without using .split(), .reverse(), or .join(). -->
+    <h1>Reverse Without String Methods</h1>
 
-    <script>
-      let num = Number(prompt("Enter A Three digit Number", 123));
-      let reversedNum = 0,
-        copyNum = num;
-
-      while (copyNum / 10) {
-        reversedNum = reversedNum * 10 + (copyNum % 10);
-        copyNum = parseInt(copyNum / 10);
-      }
-
-      document.write(`<h1>Reverse of ${num} = ${reversedNum}</h1>`);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

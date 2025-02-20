@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sum of Digits</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Sum of Digits – Take a number from the user and print the sum
-of its digits. (Example: 123 → 1+2+3 = 6)  -->
+    <h1>Sum of Digits</h1>
 
-    <script>
-      let num = Number(prompt("Enter A Number", 123));
-      let sumOfDigits = num % 10,
-        copyNum = parseInt(num / 10);
-
-      while (copyNum / 10) {
-        sumOfDigits += copyNum % 10;
-        copyNum = parseInt(copyNum / 10);
-      }
-
-      document.write(`<h1>Sum of Digits of ${num} = ${sumOfDigits}</h1>`);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -3,33 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple Calculator</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
-    <!-- Simple Calculator – Ask the user for two numbers and an
-operator (+, -, *, /). Perform the operation and display the result.  -->
+    <h1>Simple Calculator</h1>
 
-    <script>
-      let num1 = Number(prompt("Enter First Number"));
-      let num2 = Number(prompt("Enter Second Number"));
-      let operator = prompt("Enter An Operator (+, -, *, /)");
-
-      switch (operator) {
-        case "+":
-          document.write(`<h1>${num1} + ${num2} = ${num1 + num2}</h1>`);
-          break;
-        case "-":
-          document.write(`<h1>${num1} - ${num2} = ${num1 - num2}</h1>`);
-          break;
-        case "*":
-          document.write(`<h1>${num1} * ${num2} = ${num1 * num2}</h1>`);
-          break;
-        case "/":
-          document.write(`<h1>${num1} / ${num2} = ${num1 / num2}</h1>`);
-          break;
-        default:
-          document.write(`<h1>Invalid Operator!!!</h1>`);
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

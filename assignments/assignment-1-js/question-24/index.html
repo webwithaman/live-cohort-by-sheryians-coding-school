@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Find the Missing Number in a Sequence – Take a list of
+consecutive numbers (except one missing) and find the
+missing number. Example: 1, 2, 3, 5 → Missing number is 4.  -->
+
+    <script>
+      let input = prompt(
+        "Enter Consecutive Numbers In Sequence Starting From 1 (Except One Missing)",
+        "1,2,3,5"
+      );
+
+      let numbers = input.split(",");
+
+      let sum = 0;
+      for (let i = 0; numbers[i]; i++) sum += Number(numbers[i]);
+
+      console.log(sum);
+
+      let missingNumber =
+        (Number(numbers[numbers.length - 1]) *
+          (Number(numbers[numbers.length - 1]) + 1)) /
+          2 -
+        sum;
+
+      document.write(
+        `<h1>${missingNumber} is the Missing Number From Entered Consecutive Numbers</h1>`
+      );
+    </script>
+  </body>
+</html>

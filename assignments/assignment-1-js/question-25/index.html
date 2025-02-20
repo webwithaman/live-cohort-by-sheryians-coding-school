@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Convert Number to Words – Take a single-digit number and
+print it in words (Example: 1 → One, 2 → Two).  -->
+
+    <script>
+      let num = Number(prompt("Enter A Number"));
+
+      let numbersInWords = [
+        "zero",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+      ];
+
+      let reversedNum = 0,
+        copyNum = num;
+
+      while (copyNum / 10) {
+        reversedNum = reversedNum * 10 + (copyNum % 10);
+        copyNum = parseInt(copyNum / 10);
+      }
+
+      document.write(`<h1>${num} in Word Form</h1>`);
+
+      while (reversedNum / 10) {
+        document.write(`<span>${numbersInWords[reversedNum % 10]} </span>`);
+        reversedNum = parseInt(reversedNum / 10);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Grade Calculator – Ask the user for their marks (0-100).
+Assign grades based on the range:
+
+90-100: A
+
+80-89: B
+
+70-79: C
+
+60-69: D
+
+Below 60: F -->
+
+    <script>
+      let userMarks = Number(prompt("Enter Your Marks (0-100)"));
+
+      if (userMarks >= 90) document.write(`<h1>Grade: A</h1>`);
+      else if (userMarks >= 80 && userMarks <= 89)
+        document.write(`<h1>Grade: B</h1>`);
+      else if (userMarks >= 70 && userMarks <= 79)
+        document.write(`<h1>Grade: C</h1>`);
+      else if (userMarks >= 60 && userMarks <= 69)
+        document.write(`<h1>Grade: D</h1>`);
+      else document.write(`<h1>Grade : F (Fail)</h1>`);
+    </script>
+  </body>
+</html>

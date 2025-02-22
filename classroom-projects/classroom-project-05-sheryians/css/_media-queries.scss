@@ -1,0 +1,197 @@
+/* General Styles for screen size <= 300px */
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+/* General Styles for screen size <= 230px */
+@media screen and (max-width: 230px) {
+  * {
+    word-wrap: break-word;
+  }
+
+  html {
+    font-size: 38%;
+  }
+}
+
+/* General Styles for screen size <= 180px */
+@media screen and (max-width: 180px) {
+  html {
+    font-size: 25%;
+  }
+}
+
+/* General Styles for screen size >= 500px */
+@media screen and (min-width: 500px) {
+  // Hero Section Start
+  .hero {
+    .hero-right {
+      .hero-right-grid {
+        .img-box:nth-child(2) {
+          height: 30rem;
+        }
+        .img-box:nth-child(3) {
+          height: 21rem;
+        }
+      }
+    }
+  }
+  // Hero Section End
+}
+
+/* General Styles for screen size >= 768px */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+
+  .common-padding-inline {
+    padding-inline: 3rem;
+  }
+}
+
+/* General Styles for screen size >= 1080px */
+@media screen and (min-width: 1080px) {
+  .common-padding-inline {
+    padding-inline: 6rem;
+  }
+
+  .common-padding-block {
+    padding-block: 5rem;
+  }
+
+  // Navbar Start
+  .navbar {
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      position: initial;
+      background-color: initial;
+      width: auto;
+      gap: 3rem;
+
+      li {
+        padding: 0;
+        border: none;
+
+        &:first-child a {
+          color: $black;
+        }
+
+        a {
+          color: $secondary-color;
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+
+    .button-toggle-box {
+      .toggle-bar {
+        display: none;
+      }
+    }
+  }
+
+  // Hero Section Start
+  .hero {
+    flex-direction: row;
+    gap: 0;
+
+    .hero-left {
+      flex: 1;
+
+      .hero-left-text {
+        width: 90%;
+
+        h1 {
+          font-size: 7rem;
+        }
+      }
+    }
+
+    .hero-right {
+      flex: 1;
+
+      .hero-right-grid {
+        margin-left: auto;
+        width: 90%;
+        gap: 3.5rem;
+        grid-template-areas:
+          ". b"
+          "a b"
+          "a b"
+          "a b"
+          "a c"
+          ". c";
+
+        .img-box:nth-child(2) {
+          height: 35rem;
+        }
+      }
+    }
+  }
+  // Hero Section End
+
+  // latest Stories Section Start
+  .latest-stories-container {
+    flex-direction: row;
+    gap: 3.5rem;
+
+    .latest-stories-left {
+      flex: 1.5;
+    }
+
+    .latest-stories-right {
+      flex: 1;
+      gap: 3.5rem;
+
+      .latest-stories-right-box {
+        gap: 3rem;
+      }
+    }
+  }
+  // latest Stories Section End
+
+  // Highlights Section Start
+  .highlights-container {
+    flex-direction: row;
+    gap: 3.5rem;
+
+    .highlights-left {
+      flex: 1;
+
+      .highlights-left-profile {
+        gap: 3rem;
+      }
+    }
+
+    .highlights-right {
+      flex-direction: row;
+      flex: 1;
+
+      div {
+        flex: 1;
+      }
+    }
+  }
+}
+// Highlights Section End
+
+/* General Styles for screen size >= 1800px */
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 68%;
+  }
+}
+
+/* General Styles for screen size >= 2200px */
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 78%;
+  }
+}

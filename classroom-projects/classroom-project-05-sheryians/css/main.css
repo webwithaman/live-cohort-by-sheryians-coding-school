@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.common-padding-inline {
+  padding-inline: 2rem;
+}
+
+.common-padding-block {
+  padding-block: 3rem;
+}
+
+.primary-btn {
+  border: 2px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 1.5rem;
+  padding: 0.7em 1.1em;
+  border-radius: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.section-primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: drop-shadow(rgba(0, 0, 0, 0.591) 2px 2px 3px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+.common-padding-inline {
+  padding-inline: 2rem;
+}
+
+.common-padding-block {
+  padding-block: 3rem;
+}
+
+.primary-btn {
+  border: 2px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 1.5rem;
+  padding: 0.7em 1.1em;
+  border-radius: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.section-primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-block: 2rem;
+}
+.navbar .logo {
+  font-size: 2.5rem;
+}
+.navbar #checkbox-for-toggle {
+  display: none;
+}
+.navbar #checkbox-for-toggle:checked + .nav-links {
+  display: flex;
+}
+.navbar .nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-weight: 500;
+  background-color: #000;
+  letter-spacing: 0.4px;
+}
+.navbar .nav-links li {
+  font-size: 1.4rem;
+  padding: 1.3em 2.1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.594);
+  padding-block: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.navbar .nav-links li:last-child {
+  border-bottom: none;
+}
+.navbar .nav-links li a {
+  color: #fff;
+}
+.navbar .button-toggle-box {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.navbar .button-toggle-box .toggle-bar {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hero .hero-left .hero-left-text h1 {
+  font-size: 5rem;
+}
+.hero .hero-left .hero-left-text h1 span {
+  color: rgb(181, 181, 181);
+}
+.hero .hero-left .hero-left-text p {
+  font-size: 1.5rem;
+  margin-block: 0.6em 1.2em;
+}
+.hero .hero-right .hero-right-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "a b" "a b" "a b" "a c" "a c" "a c";
+}
+.hero .hero-right .hero-right-grid .img-box {
+  border-radius: 2rem;
+  background-size: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.hero .hero-right .hero-right-grid .img-box:nth-child(1) {
+  background-image: url(https://img.freepik.com/free-photo/stunning-natural-landscape_23-2151893613.jpg?t=st=1739531942~exp=1739535542~hmac=e9097604952687eeae21f63086a79d6e9e6eb06c93a0e30430841f347c14b50d&w=740);
+  grid-area: a;
+}
+.hero .hero-right .hero-right-grid .img-box:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1524338198850-8a2ff63aaceb?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  grid-area: b;
+  height: 17rem;
+}
+.hero .hero-right .hero-right-grid .img-box:nth-child(3) {
+  background-image: url(https://img.freepik.com/free-photo/stunning-natural-landscape_23-2151893581.jpg?t=st=1739532372~exp=1739535972~hmac=b6d1fdce07150d95e7e08406dc7477552b4b9cc6d8f4e1b815a033e45f4e675f&w=1060);
+  grid-area: c;
+  height: 10rem;
+}
+
+.destinations-boxes {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+  overflow-x: auto;
+  border-radius: 2rem 2rem 0 0;
+}
+.destinations-boxes::-webkit-scrollbar {
+  height: 1.1rem;
+}
+.destinations-boxes::-webkit-scrollbar-track {
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.203) inset;
+}
+.destinations-boxes::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+}
+.destinations-boxes .destination-box {
+  flex-shrink: 0;
+  width: 25rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.destinations-boxes .destination-box img {
+  border-radius: 2rem;
+  aspect-ratio: 1/1.4;
+  filter: drop-shadow(rgba(0, 0, 0, 0.591) 2px 2px 3px);
+}
+.destinations-boxes .destination-box h3 {
+  font-size: 2rem;
+  color: #000;
+  padding: 0.3em 0 0 0.3em;
+  font-weight: 500;
+}
+
+.latest-stories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.latest-stories-container h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+.latest-stories-container p {
+  font-size: 1.6rem;
+  margin-block: 0.7em 0.9em;
+}
+.latest-stories-container .latest-stories-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box div:first-child {
+  flex: 0.8;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box div:first-child img {
+  aspect-ratio: 1;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box div:last-child {
+  flex: 1.2;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box div:last-child span {
+  color: rgb(181, 181, 181);
+  font-size: 1.5rem;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box div:last-child h3 {
+  margin-block: 0.2em;
+}
+.latest-stories-container .latest-stories-right .latest-stories-right-box div:last-child p {
+  margin: 0;
+}
+
+.highlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.highlights-container .highlights-left .highlights-left-profile {
+  display: flex;
+  gap: 2rem;
+}
+.highlights-container .highlights-left .highlights-left-profile img {
+  width: 6rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.highlights-container .highlights-left .highlights-left-profile div h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.highlights-container .highlights-left .highlights-left-profile div span {
+  color: rgb(181, 181, 181);
+  font-size: 1.5rem;
+}
+.highlights-container .highlights-left h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-block: 0.5em 0.2em;
+}
+.highlights-container .highlights-left p {
+  font-size: 1.6rem;
+}
+.highlights-container .highlights-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.highlights-container .highlights-right div p {
+  font-size: 1.6rem;
+  margin-block: 0.3em 0.5em;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.4rem;
+  padding-block: 1rem;
+}
+
+/* General Styles for screen size <= 300px */
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 48%;
+  }
+}
+/* General Styles for screen size <= 230px */
+@media screen and (max-width: 230px) {
+  * {
+    word-wrap: break-word;
+  }
+  html {
+    font-size: 38%;
+  }
+}
+/* General Styles for screen size <= 180px */
+@media screen and (max-width: 180px) {
+  html {
+    font-size: 25%;
+  }
+}
+/* General Styles for screen size >= 500px */
+@media screen and (min-width: 500px) {
+  .hero .hero-right .hero-right-grid .img-box:nth-child(2) {
+    height: 30rem;
+  }
+  .hero .hero-right .hero-right-grid .img-box:nth-child(3) {
+    height: 21rem;
+  }
+}
+/* General Styles for screen size >= 768px */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  .common-padding-inline {
+    padding-inline: 3rem;
+  }
+}
+/* General Styles for screen size >= 1080px */
+@media screen and (min-width: 1080px) {
+  .common-padding-inline {
+    padding-inline: 6rem;
+  }
+  .common-padding-block {
+    padding-block: 5rem;
+  }
+  .navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: initial;
+    background-color: initial;
+    width: auto;
+    gap: 3rem;
+  }
+  .navbar .nav-links li {
+    padding: 0;
+    border: none;
+  }
+  .navbar .nav-links li:first-child a {
+    color: #000;
+  }
+  .navbar .nav-links li a {
+    color: rgb(181, 181, 181);
+  }
+  .navbar .nav-links li a:hover {
+    color: #000;
+  }
+  .navbar .button-toggle-box .toggle-bar {
+    display: none;
+  }
+  .hero {
+    flex-direction: row;
+    gap: 0;
+  }
+  .hero .hero-left {
+    flex: 1;
+  }
+  .hero .hero-left .hero-left-text {
+    width: 90%;
+  }
+  .hero .hero-left .hero-left-text h1 {
+    font-size: 7rem;
+  }
+  .hero .hero-right {
+    flex: 1;
+  }
+  .hero .hero-right .hero-right-grid {
+    margin-left: auto;
+    width: 90%;
+    gap: 3.5rem;
+    grid-template-areas: ". b" "a b" "a b" "a b" "a c" ". c";
+  }
+  .hero .hero-right .hero-right-grid .img-box:nth-child(2) {
+    height: 35rem;
+  }
+  .latest-stories-container {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+  .latest-stories-container .latest-stories-left {
+    flex: 1.5;
+  }
+  .latest-stories-container .latest-stories-right {
+    flex: 1;
+    gap: 3.5rem;
+  }
+  .latest-stories-container .latest-stories-right .latest-stories-right-box {
+    gap: 3rem;
+  }
+  .highlights-container {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+  .highlights-container .highlights-left {
+    flex: 1;
+  }
+  .highlights-container .highlights-left .highlights-left-profile {
+    gap: 3rem;
+  }
+  .highlights-container .highlights-right {
+    flex-direction: row;
+    flex: 1;
+  }
+  .highlights-container .highlights-right div {
+    flex: 1;
+  }
+}
+/* General Styles for screen size >= 1800px */
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 68%;
+  }
+}
+/* General Styles for screen size >= 2200px */
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 78%;
+  }
+}

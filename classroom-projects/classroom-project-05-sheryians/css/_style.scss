@@ -1,0 +1,379 @@
+// Google Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+// Reset Default Styles Start
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $primary-font-family;
+  color: $black;
+}
+// Reset Default Styles End
+
+// Common Styles for Frequently Used Elements Start
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+  filter: drop-shadow(rgba(0, 0, 0, 0.591) 2px 2px 3px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+// Common Styles for Frequently Used Elements End
+
+// Reusable Components & Utility Classes Start
+.common-padding-inline {
+  padding-inline: 2rem;
+}
+
+.common-padding-block {
+  padding-block: 3rem;
+}
+
+.primary-btn {
+  border: 2px solid $black;
+  background: $black;
+  color: $white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 1.5rem;
+  padding: 0.7em 1.1em;
+  border-radius: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  font-family: $primary-font-family;
+}
+
+.primary-btn:hover {
+  background: $white;
+  color: $black;
+}
+
+.section-primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}
+// Reusable Components & Utility Classes Start
+
+// Page-Specific Styles Start
+
+// Navbar Start
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-block: 2rem;
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  #checkbox-for-toggle {
+    display: none;
+  }
+
+  #checkbox-for-toggle:checked + .nav-links {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font-weight: 500;
+    background-color: $black;
+    letter-spacing: 0.4px;
+
+    li {
+      font-size: 1.4rem;
+      padding: 1.3em 2.1em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.594);
+      padding-block: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .button-toggle-box {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+
+    .toggle-bar {
+      font-size: 3.5rem;
+      font-weight: 900;
+    }
+  }
+}
+// Navbar End
+
+// Hero Section Start
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .hero-left {
+    .hero-left-text {
+      h1 {
+        font-size: 5rem;
+
+        span {
+          color: $secondary-color;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-block: 0.6em 1.2em;
+      }
+    }
+  }
+
+  .hero-right {
+    .hero-right-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-areas:
+        "a b"
+        "a b"
+        "a b"
+        "a c"
+        "a c"
+        "a c";
+
+      .img-box {
+        border-radius: 2rem;
+        background-size: cover;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+
+      .img-box:nth-child(1) {
+        background-image: url(https://img.freepik.com/free-photo/stunning-natural-landscape_23-2151893613.jpg?t=st=1739531942~exp=1739535542~hmac=e9097604952687eeae21f63086a79d6e9e6eb06c93a0e30430841f347c14b50d&w=740);
+        grid-area: a;
+      }
+
+      .img-box:nth-child(2) {
+        background-image: url(https://images.unsplash.com/photo-1524338198850-8a2ff63aaceb?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        grid-area: b;
+        height: 17rem;
+      }
+
+      .img-box:nth-child(3) {
+        background-image: url(https://img.freepik.com/free-photo/stunning-natural-landscape_23-2151893581.jpg?t=st=1739532372~exp=1739535972~hmac=b6d1fdce07150d95e7e08406dc7477552b4b9cc6d8f4e1b815a033e45f4e675f&w=1060);
+        grid-area: c;
+        height: 10rem;
+      }
+    }
+  }
+}
+// Hero Section End
+
+// Top Destinations Section Start
+.destinations-boxes {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+  overflow-x: auto;
+  border-radius: 2rem 2rem 0 0;
+
+  &::-webkit-scrollbar {
+    height: 1.1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.203) inset;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .destination-box {
+    flex-shrink: 0;
+    width: 25rem;
+    border-radius: 2rem 2rem 0 0;
+
+    img {
+      border-radius: 2rem;
+      aspect-ratio: 1/1.4;
+      filter: drop-shadow(rgba(0, 0, 0, 0.591) 2px 2px 3px);
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $black;
+      padding: 0.3em 0 0 0.3em;
+      font-weight: 500;
+    }
+  }
+}
+// Top Destinations Section End
+
+// latest Stories Section Start
+.latest-stories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 0.5em;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-block: 0.7em 0.9em;
+  }
+
+  .latest-stories-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .latest-stories-right-box {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+
+      div:first-child {
+        flex: 0.8;
+
+        img {
+          aspect-ratio: 1;
+        }
+      }
+
+      div:last-child {
+        flex: 1.2;
+
+        span {
+          color: $secondary-color;
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          margin-block: 0.2em;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+// latest Stories Section End
+
+// Highlights Section Start
+.highlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .highlights-left {
+    .highlights-left-profile {
+      display: flex;
+      gap: 2rem;
+
+      img {
+        width: 6rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+      }
+
+      div {
+        h4 {
+          font-size: 2.2rem;
+          font-weight: 500;
+        }
+        span {
+          color: $secondary-color;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-block: 0.5em 0.2em;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
+  .highlights-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    div {
+      p {
+        font-size: 1.6rem;
+        margin-block: 0.3em 0.5em;
+      }
+    }
+  }
+}
+// Highlights Section End
+
+// Footer Start
+footer {
+  background-color: $black;
+  color: $white;
+  font-size: 1.4rem;
+  padding-block: 1rem;
+}
+// Footer End
+
+// Page-Specific Styles End

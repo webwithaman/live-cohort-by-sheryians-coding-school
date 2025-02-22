@@ -1,0 +1,33 @@
+.common-padding-inline {
+  padding-inline: 2rem;
+}
+
+.common-padding-block {
+  padding-block: 3rem;
+}
+
+.primary-btn {
+  border: 2px solid $black;
+  background: $black;
+  color: $white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 1.5rem;
+  padding: 0.7em 1.1em;
+  border-radius: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  font-family: $primary-font-family;
+}
+
+.primary-btn:hover {
+  background: $white;
+  color: $black;
+}
+
+.section-primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}

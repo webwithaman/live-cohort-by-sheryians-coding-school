@@ -62,22 +62,22 @@ Each question is solved in its respective folder, but for convenience, the quest
 8. **Question 08:**
 
 ```
-User Greeting – Ask for the user's name and time (24-hour
-format). Greet them accordingly:
-5 AM–12 PM: "Good Morning, [Name]!"
-12 PM–5 PM: "Good Afternoon, [Name]!"
-5 PM–9 PM: "Good Evening, [Name]!"
-9 PM–5 AM: "Good Night, [Name]!"
+   User Greeting – Ask for the user's name and time (24-hour
+   format). Greet them accordingly:
+   5 AM–12 PM: "Good Morning, [Name]!"
+   12 PM–5 PM: "Good Afternoon, [Name]!"
+   5 PM–9 PM: "Good Evening, [Name]!"
+   9 PM–5 AM: "Good Night, [Name]!"
 ```
 
 9. **Question 09:**
 
 ```
-Traffic Light System – Ask the user for a traffic light color (red,
-yellow, green). Print appropriate messages:
-Red: "Stop!"
-Yellow: "Get Ready!"
-Green: "Go!"
+   Traffic Light System – Ask the user for a traffic light color (red,
+   yellow, green). Print appropriate messages:
+   Red: "Stop!"
+   Yellow: "Get Ready!"
+   Green: "Go!"
 ```
 
 10. **Question 10:**

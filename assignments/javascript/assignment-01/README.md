@@ -6,11 +6,14 @@ Each question is solved in its respective folder, but for convenience, the quest
 
 ## Questions
 
-1. **Question 01:**  
+1. **Question 01:**
+
+```
    Age Category Message – Ask the user for their age. If they are
    under 18, print “You are a minor.” If they are between 18 and 60,
    print “You are an adult.” If they are above 60, print “You are a
    senior citizen.”
+```
 
 2. **Question 02:**  
    Even or Odd Sum – Take two numbers from the user using

@@ -8,9 +8,9 @@ Math.max()
 
 */
 
-let num1 = Number(prompt("Enter First Number", 9));
-let num2 = Number(prompt("Enter Second Number", 12));
-let num3 = Number(prompt("Enter Third Number", 2));
+let num1 = parseFloat(prompt("Enter First Number", 9));
+let num2 = parseFloat(prompt("Enter Second Number", 12));
+let num3 = parseFloat(prompt("Enter Third Number", 2));
 
 if (Number.isNaN(num1) || Number.isNaN(num2) || Number.isNaN(num3))
   document.write(`<h1>Invalid Input!!!</h1>`);

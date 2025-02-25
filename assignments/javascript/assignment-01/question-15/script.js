@@ -7,7 +7,7 @@ and print its reverse. (Example: 123 → 321).
 
 */
 
-let num = Number(prompt("Enter A Three digit Number", 123));
+let num = parseInt(prompt("Enter A Three digit Number (Integer)", 123));
 
 if (Number.isNaN(num)) document.write(`<h1>Invalid Input!!!</h1>`);
 else {

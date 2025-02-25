@@ -8,8 +8,8 @@ otherwise, print “Odd Sum”
 
 */
 
-let num1 = Number(prompt("Enter First Number", 7));
-let num2 = Number(prompt("Enter Second Number", 3));
+let num1 = parseInt(prompt("Enter First Number (Integer)", 7));
+let num2 = parseInt(prompt("Enter Second Number (Integer)", 3));
 
 if (Number.isNaN(num1) || Number.isNaN(num2))
   document.write("<h1>Invalid Input!!!</h1>");

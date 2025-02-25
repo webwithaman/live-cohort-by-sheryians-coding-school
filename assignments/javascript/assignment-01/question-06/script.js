@@ -7,8 +7,8 @@ operator (+, -, *, /). Perform the operation and display the result.
   
 */
 
-let num1 = Number(prompt("Enter First Number", 23));
-let num2 = Number(prompt("Enter Second Number", 2));
+let num1 = parseFloat(prompt("Enter First Number", 23));
+let num2 = parseFloat(prompt("Enter Second Number", 2));
 let operator = prompt("Enter An Operator (+, -, *, /)", "+");
 
 if (Number.isNaN(num1) || Number.isNaN(num2))

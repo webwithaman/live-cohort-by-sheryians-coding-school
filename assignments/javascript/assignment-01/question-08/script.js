@@ -16,7 +16,7 @@ format). Greet them accordingly:
 */
 
 let userName = prompt("Enter Your Name");
-let timeIn24HrFormat = Number(
+let timeIn24HrFormat = parseInt(
   prompt(
     "Please enter the time in 24-hour format (HH), (e.g., 14 for 2 PM, 3 for 3 AM)"
   )

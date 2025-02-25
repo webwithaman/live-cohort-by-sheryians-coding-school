@@ -7,7 +7,7 @@ how many even digits it has.
 
 */
 
-let num = Number(prompt("Enter A Number", 82769));
+let num = parseInt(prompt("Enter A Number (Integer)", 82769));
 
 if (Number.isNaN(num)) document.write(`<h1>Invalid Input!!!</h1>`);
 else {

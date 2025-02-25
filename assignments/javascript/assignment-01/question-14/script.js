@@ -8,7 +8,7 @@ only 5, print “Buzz”; otherwise, print the number itself.
 
 */
 
-let num = Number(
+let num = parseFloat(
   prompt("Enter A Number to Check Whether It is a Multiple of Both 3 & 5", 30)
 );
 

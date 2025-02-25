@@ -16,8 +16,8 @@ Otherwise, print “Medium Salary”
 
 */
 
-let userAge = Number(prompt("Enter Your Age"));
-let userSalary = Number(prompt("Enter Your Salary"));
+let userAge = parseFloat(prompt("Enter Your Age"));
+let userSalary = parseFloat(prompt("Enter Your Salary"));
 
 if (Number.isNaN(userAge) || Number.isNaN(userSalary))
   document.write("<h1>Invalid Input!!!</h1>");

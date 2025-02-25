@@ -17,7 +17,7 @@ Below 60: F
 
 */
 
-let userMarks = Number(prompt("Enter Your Marks (Between 0-100)", 88));
+let userMarks = parseFloat(prompt("Enter Your Marks (Between 0-100)", 88));
 
 if (Number.isNaN(userMarks) || userMarks > 100)
   document.write(`<h1>Invalid Input</h1>`);

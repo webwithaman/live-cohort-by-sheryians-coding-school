@@ -7,7 +7,7 @@ multiplication table up to 10.
 
 */
 
-let num = Number(prompt("Enter A Number", 7));
+let num = parseFloat(prompt("Enter A Number", 7));
 
 if (Number.isNaN(num)) document.write(`<h2>Invalid Input!!!</h2>`);
 else {

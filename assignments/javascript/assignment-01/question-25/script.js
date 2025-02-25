@@ -7,7 +7,7 @@ print it in words (Example: 1 → One, 2 → Two).
 
 */
 
-let num = Number(prompt("Enter A Number"));
+let num = parseInt(prompt("Enter A Number (Integer)"));
 
 if (Number.isNaN(num)) document.write(`<h1>Invalid Input!!!</h1>`);
 else {

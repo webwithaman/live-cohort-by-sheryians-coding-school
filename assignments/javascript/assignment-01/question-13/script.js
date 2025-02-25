@@ -7,8 +7,8 @@ user and swap their values without using a third variable.
 
 */
 
-let num1 = Number(prompt("Enter First Number (num1)", 5));
-let num2 = Number(prompt("Enter Second Number (num2)", 14));
+let num1 = parseFloat(prompt("Enter First Number (num1)", 5));
+let num2 = parseFloat(prompt("Enter Second Number (num2)", 14));
 
 if (Number.isNaN(num1) || Number.isNaN(num2))
   document.write(`<h1>Invalid Input!!!</h1>`);

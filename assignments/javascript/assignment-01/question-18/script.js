@@ -7,7 +7,7 @@ and reverse it without using .split(), .reverse(), or .join().
 
 */
 
-let num = Number(prompt("Enter A Number", 3875));
+let num = parseInt(prompt("Enter A Number (Integer)", 3875));
 
 if (Number.isNaN(num)) document.write(`<h1>Invalid Input!!!</h1>`);
 else {

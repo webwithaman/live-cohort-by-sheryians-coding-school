@@ -7,7 +7,7 @@ of its digits. (Example: 123 → 1+2+3 = 6)
 
 */
 
-let num = Number(prompt("Enter A Number", 123));
+let num = parseInt(prompt("Enter A Number (Integer)", 123));
 
 if (Number.isNaN(num)) document.write(`<h1>Invalid Input!!!</h1>`);
 else {

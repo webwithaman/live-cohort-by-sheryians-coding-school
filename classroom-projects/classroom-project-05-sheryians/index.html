@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Wodr</title>
+    <title>ERIKK</title>
 
-    <!-- FontAwesome CDN for icons -->
+    <!-- Ionicons CDN for icons -->
     <script
-      src="https://kit.fontawesome.com/2bcb8da7fa.js"
-      crossorigin="anonymous"
-      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
     <!-- Custom External Stylesheets -->
@@ -23,259 +26,503 @@
     <div class="site-wrapper">
       <!-- Navbar Start -->
       <nav class="navbar common-padding-inline">
-        <h2 class="logo">wodr</h2>
+        <img class="logo" src="assets/images/logo-1.png" alt="logo" />
 
-        <input type="checkbox" id="checkbox-for-toggle" />
+        <div class="navbar-right">
+          <input type="checkbox" id="checkbox-for-toggle" />
 
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#top-destinations">places</a></li>
-          <li><a href="#latest-stories">blogs</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#travel">travel</a></li>
-          <li><a href="#highlights">highlights</a></li>
-        </ul>
+          <ul class="nav-links">
+            <li><a href="#">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#selected-work">work</a></li>
+            <li><a href="#clients">clients</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#footer">contact</a></li>
+            <li><a href="#tailored">tailored</a></li>
+            <li>
+              <button class="primary-btn" type="button">
+                <div>
+                  <span>more templates</span>
+                  <span>more templates</span>
+                </div>
+              </button>
+            </li>
+          </ul>
 
-        <div class="button-toggle-box">
-          <button type="button" class="primary-btn">contact</button>
-          <label for="checkbox-for-toggle" class="toggle-bar">&#9781;</label>
+          <div class="toggle-btns">
+            <span>(0)</span>
+            <button class="primary-btn" type="button">
+              <div>
+                <span>let's create</span>
+                <span>let's create</span>
+              </div>
+            </button>
+            <label for="checkbox-for-toggle" class="toggle-bar">
+              <span class="toggle-bar-line toggle-bar-line-1"></span>
+              <span class="toggle-bar-line toggle-bar-line-2"></span>
+              <span class="toggle-bar-line toggle-bar-line-2"></span>
+            </label>
+          </div>
         </div>
       </nav>
       <!-- Navbar End -->
 
       <!-- Hero Section Start -->
-      <section
-        class="hero common-padding-block common-padding-inline"
-        id="hero"
-      >
-        <div class="hero-left">
-          <div class="hero-left-text">
-            <h1>Discover the World's <span>Hidden</span> Wonders</h1>
-            <p>
-              Various lists of the Wonders of order to catalogue the world's
-              most spectacular the World have been compiled from antiquity to
-              the present day, in order to catalogue the world's most
-              spectacular natural features and human-built structures. The Seve…
-            </p>
-            <button class="primary-btn" type="button">Explore more</button>
+      <section class="hero common-padding-inline" id="hero">
+        <div class="hero-top-text">
+          <img src="assets/images/hero-1.svg" alt="text-img" />
+          <div>
+            <p>Branding Agency</p>
+            <p>From Berlin</p>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="hero-right-grid">
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
+        <div class="hero-bottom">
+          <div class="hero-bottom-img">
+            <img src="assets/images/hero-2.webp" alt="hero-img" />
+          </div>
+
+          <div class="hero-bottom-text">
+            <div>
+              <h1 class="secondary-heading">
+                Unleash­ing Your Brand’s Potential
+              </h1>
+              <p>
+                Comprehensive branding solutions that help fashion, lifestyle,
+                and luxury brands connect with their target audience.
+              </p>
+            </div>
+
+            <div class="hero-bottom-services">
+              <div class="service">
+                <h4>01</h4>
+                <h4>branding</h4>
+              </div>
+              <hr />
+              <div class="service">
+                <h4>02</h4>
+                <h4>campaigns</h4>
+              </div>
+              <hr />
+              <div class="service">
+                <h4>03</h4>
+                <h4>social media</h4>
+              </div>
+              <hr />
+              <div class="service">
+                <h4>04</h4>
+                <h4>e-commerce</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- Hero Section End -->
 
-      <!-- Top Destination Section Start -->
-      <section
-        class="top-destinations common-padding-block common-padding-inline"
-        id="top-destinations"
-      >
-        <h2 class="section-primary-heading">top destinations</h2>
+      <!-- Tailored Section Start -->
+      <section class="tailored common-padding-inline" id="tailored">
+        <div class="tailored-img">
+          <img src="assets/images/tailored-1.webp" alt="img" />
+        </div>
 
-        <div class="destinations-boxes">
-          <div class="destination-box">
-            <img src="assets/images/i-3.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-4.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-5.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-3.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-4.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-5.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-3.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-4.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-5.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-3.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-4.jpg" alt="image" />
-            <h3>Paris Tower</h3>
-          </div>
-          <div class="destination-box">
-            <img src="assets/images/i-5.jpg" alt="image" />
-            <h3>Paris Tower</h3>
+        <div class="tailored-text">
+          <p>what we do</p>
+
+          <div>
+            <h1 class="primary-heading">Tailored Brand solutions</h1>
+            <p>
+              We believe that every brand has a unique story to tell and our
+              mission is to help you bring that story to life through
+              exceptional branding, marketing, e-commerce, and social media
+              strategies.
+            </p>
           </div>
         </div>
       </section>
-      <!-- Top Destination Section End -->
+      <!-- Tailored Section End -->
 
-      <!-- Latest Stories Section Start -->
-      <section
-        class="latest-stories common-padding-block common-padding-inline"
-        id="latest-stories"
-      >
-        <h2 class="section-primary-heading">latest stories</h2>
+      <!-- Services Section Start -->
+      <section class="services common-padding-inline" id="services">
+        <div class="services-text">
+          <h1 class="primary-heading">our services</h1>
 
-        <div class="latest-stories-container">
-          <div class="latest-stories-left">
-            <div>
-              <img src="assets/images/i-1.jpg" alt="image" />
+          <div class="services-boxes">
+            <div class="service-box">
+              <h4>branding</h4>
+              <p>Establish a strong brand identity that sets you apart.</p>
+              <a class="visit-to" href="#">
+                <span><ion-icon name="arrow-up-outline"></ion-icon></span>
+                about branding
+              </a>
             </div>
-            <h3>Paris Tower</h3>
-            <p>
-              There are plenty of lists of the world’s most beautiful places—but
-              they’re usually subjective. Britain-based travel company Kuoni
-              recently put science to work to make an official ranking of the
-              world’s most beautiful travel destinations. The company’s
-              eye-tracking study analyzed the world’s most well-known natural
-              wonders
-            </p>
-            <button class="primary-btn" type="button">Check out</button>
-          </div>
-
-          <div class="latest-stories-right">
-            <div class="latest-stories-right-box">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1498855926480-d98e83099315?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="image"
-                />
-              </div>
-              <div>
-                <span>April 16, 2025</span>
-                <h3>Paris Tower</h3>
-                <p>
-                  There are plenty of lists of the world’s most beautiful
-                  placesbut they’re usually subjective
-                </p>
-              </div>
+            <div class="service-box">
+              <h4>campaigns</h4>
+              <p>Establish a strong brand identity that sets you apart.</p>
+              <a class="visit-to" href="#">
+                <span><ion-icon name="arrow-up-outline"></ion-icon></span>
+                about campaigns
+              </a>
             </div>
-
-            <div class="latest-stories-right-box">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1480497490787-505ec076689f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="image"
-                />
-              </div>
-              <div>
-                <span>April 16, 2025</span>
-                <h3>Paris Tower</h3>
-                <p>
-                  There are plenty of lists of the world’s most beautiful
-                  placebut they’re usually subjective
-                </p>
-              </div>
+            <div class="service-box">
+              <h4>social media</h4>
+              <p>Establish a strong brand identity that sets you apart.</p>
+              <a class="visit-to" href="#">
+                <span><ion-icon name="arrow-up-outline"></ion-icon></span>
+                about social media
+              </a>
             </div>
-
-            <div class="latest-stories-right-box">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1517690623533-ca77a9a4b402?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="image"
-                />
-              </div>
-              <div>
-                <span>April 16, 2025</span>
-                <h3>Paris Tower</h3>
-                <p>
-                  There are plenty of lists of the world’s most beautiful
-                  places.but they’re usually subjective
-                </p>
-              </div>
+            <div class="service-box">
+              <h4>e-commerce</h4>
+              <p>Establish a strong brand identity that sets you apart.</p>
+              <a class="visit-to" href="#">
+                <span><ion-icon name="arrow-up-outline"></ion-icon></span>
+                about e-commerce
+              </a>
             </div>
           </div>
         </div>
+
+        <div class="services-img">
+          <img src="assets/images/services-1.webp" alt="img" />
+        </div>
       </section>
-      <!-- Latest Stories Section End -->
+      <!-- Services Section End -->
 
-      <!-- Highlights Section Start -->
-      <section
-        class="highlights common-padding-block common-padding-inline"
-        id="highlights"
-      >
-        <h2 class="section-primary-heading">Highlights</h2>
+      <!-- Selected Work Section Start -->
+      <section class="selected-work common-padding-inline" id="selected-work">
+        <img
+          class="selected-work-heading"
+          src="assets/images/selected-work-1.svg"
+          alt="img"
+        />
 
-        <div class="highlights-container">
-          <div class="highlights-left">
-            <div class="highlights-left-profile">
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1739603840~exp=1739607440~hmac=de1578829d3ac264cfde77cec6be543f4ddec93743be9874460ba64de55a5d7a&w=1060"
-                alt="image"
-              />
-              <div>
-                <h4>Alex Johnson</h4>
-                <span>Director</span>
-              </div>
-            </div>
-            <h3>Homeo Graphic Design</h3>
-            <p>
-              Freepik is a technology company specializing in AI tools for
-              creating and editing audiovisual content. The company provides
-              AI-powered design tools, AI-generated images, and a growing
-              collection of stock photos, illustrations, and vector graphics,
-              operating unde... See more on Wikipedia
-            </p>
-            <p>
-              Free media you can use anywhere. Pixabay is a vibrant community of
-              creatives, sharing royalty-free images, videos, audio and other
-              media. All content is released by Pixabay under the … Free media
-              you can use anywhere. Pixabay is a vibrant community of creatives,
-              sharing royalty-free images, videos, audio and other media. All
-              content is released by Pixabay under the … AI-generated images,
-              and a growing collection of stock photos, illustrations, and
-              vector graphics, operating unde... See more on Wikipedia
-            </p>
+        <div class="selected-work-boxes">
+          <div>
+            <img src="assets/images/selected-work-2.webp" alt="img" />
           </div>
 
-          <div class="highlights-right">
+          <div>
+            <img src="assets/images/selected-work-3.webp" alt="img" />
+          </div>
+
+          <div>
             <div>
-              <img
-                src="https://img.freepik.com/free-photo/tulip-field-keukenhof-gardens-lisse-netherlands_155003-10440.jpg?t=st=1739605318~exp=1739608918~hmac=7fa00b199584bcd348f01d93aed3487bc9d370fc89ed8287d14c57d2e1ecf1ff&w=740"
-                alt="image"
-              />
+              <h4>azure</h4>
+              <p>Establish a strong brand identity that sets you apart.</p>
             </div>
+            <a class="visit-to" href="#">
+              <span><ion-icon name="arrow-up-outline"></ion-icon></span>
+              discover
+            </a>
+          </div>
+        </div>
+
+        <div class="selected-work-boxes">
+          <div>
+            <img src="assets/images/selected-work-4.webp" alt="img" />
+          </div>
+          <div>
+            <img src="assets/images/selected-work-5.webp" alt="img" />
+          </div>
+          <div>
             <div>
-              <img
-                src="https://img.freepik.com/free-photo/beautiful-green-park_1417-1443.jpg?t=st=1739604212~exp=1739607812~hmac=f17a5a6e815d3b1aba4bfa3a443712889a49272eabaf67468c7a6da348bc3276&w=1060"
-                alt="image"
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                minus nobis necessitatibus. Repudiandae, dolore obcaecati!
-              </p>
-              <button type="button" class="primary-btn">See More</button>
+              <h4>sage</h4>
+              <p>Establish a strong brand identity that sets you apart.</p>
             </div>
+            <a class="visit-to" href="#">
+              <span><ion-icon name="arrow-up-outline"></ion-icon></span>
+              discover
+            </a>
           </div>
         </div>
       </section>
-      <!-- Highlights Section End -->
+      <!-- Selected Work Section End -->
 
-      <footer class="common-padding-inline">
-        <p>Developed with love by Aman | @webwithaman</p>
+      <!-- Clients Section Start -->
+      <section class="clients common-padding-inline" id="clients">
+        <img
+          class="clients-heading"
+          src="assets/images/clients-1.svg"
+          alt="img"
+        />
+
+        <div class="clients-data">
+          <div class="client-data">
+            <div>
+              <p>2023</p>
+              <h5>Oceania</h5>
+            </div>
+            <p>branding</p>
+          </div>
+          <hr />
+          <div class="client-data">
+            <div>
+              <p>2023</p>
+              <h5>fleure</h5>
+            </div>
+            <p>branding</p>
+          </div>
+          <hr />
+
+          <div class="client-data">
+            <div>
+              <p>2022</p>
+              <h5>northland</h5>
+            </div>
+            <p>branding</p>
+          </div>
+          <hr />
+
+          <div class="client-data">
+            <div>
+              <p>2021</p>
+              <h5>velcore</h5>
+            </div>
+            <p>branding</p>
+          </div>
+          <hr />
+
+          <div class="client-data">
+            <div>
+              <p>2020</p>
+              <h5>sage</h5>
+            </div>
+            <p>branding</p>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Section End -->
+
+      <!-- Team Section Start -->
+      <section class="team common-padding-inline" id="team">
+        <div class="team-header">
+          <h1 class="primary-heading">team</h1>
+          <p>
+            We have assembled a team of talented and experienced professionals
+            who are dedicated to helping you achieve your brand's full
+            potential.
+          </p>
+        </div>
+
+        <div class="team-members">
+          <div class="team-member">
+            <h5>Emily Joy</h5>
+            <div class="team-member-img">
+              <img src="assets/images/team-1.webp" alt="img" />
+            </div>
+            <div class="role">
+              <h6>fashion desginer</h6>
+              <div class="socials">
+                <a href="https://www.instagram.com/webwithaman/"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+                <a href="https://www.linkedin.com/in/webwithaman/"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+                <a href="https://x.com/webwithaman/"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <p>
+              Leading our creative vision with strategic insights and innovative
+              ideas.
+            </p>
+          </div>
+          <div class="team-member">
+            <h5>kate lee</h5>
+            <div class="team-member-img">
+              <img src="assets/images/team-2.webp" alt="img" />
+            </div>
+            <div class="role">
+              <h6>brand creator</h6>
+              <div class="socials">
+                <a href="https://www.instagram.com/webwithaman/"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+                <a href="https://www.linkedin.com/in/webwithaman/"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+                <a href="https://x.com/webwithaman/"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <p>
+              Leading our creative vision with strategic insights and innovative
+              ideas.
+            </p>
+          </div>
+          <div class="team-member">
+            <h5>jess chen</h5>
+            <div class="team-member-img">
+              <img src="assets/images/team-3.webp" alt="img" />
+            </div>
+            <div class="role">
+              <h6>Creative Director</h6>
+              <div class="socials">
+                <a href="https://www.instagram.com/webwithaman/"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+                <a href="https://www.linkedin.com/in/webwithaman/"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+                <a href="https://x.com/webwithaman/"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <p>
+              Leading our creative vision with strategic insights and innovative
+              ideas.
+            </p>
+          </div>
+          <div class="team-member">
+            <h5>ilan sur</h5>
+            <div class="team-member-img">
+              <img src="assets/images/team-4.webp" alt="img" />
+            </div>
+            <div class="role">
+              <h6>graphic desginer</h6>
+              <div class="socials">
+                <a href="https://www.instagram.com/webwithaman/"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+                <a href="https://www.linkedin.com/in/webwithaman/"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+                <a href="https://x.com/webwithaman/"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <p>
+              Leading our creative vision with strategic insights and innovative
+              ideas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Team Section End -->
+
+      <!-- Footer Start -->
+      <footer id="footer">
+        <div class="footer-top common-padding-inline">
+          <img src="assets/images/footer-1.svg" alt="img" />
+          <h1>Unleashing the Potential of Your Brand</h1>
+          <button class="primary-btn">
+            <div>
+              <span>get in touch</span>
+              <span>get in touch</span>
+            </div>
+          </button>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom common-padding-inline">
+          <div class="footer-links">
+            <img class="logo" src="assets/images/logo-2.svg" alt="img" />
+
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/webwithaman/">
+                  <span><ion-icon name="logo-instagram"></ion-icon></span>
+                  instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/webwithaman/">
+                  <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                  linkedin
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/webwithaman/">
+                  <span><ion-icon name="logo-twitter"></ion-icon></span>
+                  twitter (x)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h6>pages</h6>
+            <ul>
+              <li>
+                <a href="#"> home </a>
+              </li>
+              <li>
+                <a href="#"> services </a>
+              </li>
+              <li>
+                <a href="#"> about </a>
+              </li>
+              <li>
+                <a href="#"> jobs </a>
+              </li>
+              <li>
+                <a href="#"> blogs </a>
+              </li>
+              <li>
+                <button class="primary-btn">
+                  <div>
+                    <span>more templates</span>
+                    <span>more templates</span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h6>cms</h6>
+            <ul>
+              <li>
+                <a href="#"> work </a>
+              </li>
+              <li>
+                <a href="#"> research </a>
+              </li>
+              <li>
+                <a href="#"> new letter </a>
+              </li>
+              <li>
+                <a href="#"> shop single </a>
+              </li>
+              <li>
+                <a href="#"> work single </a>
+              </li>
+              <li>
+                <a href="#"> subscribe </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h6>utility pages</h6>
+            <ul>
+              <li>
+                <a href="#"> 404 error </a>
+              </li>
+              <li>
+                <a href="#"> password protected </a>
+              </li>
+              <li>
+                <a href="#"> styleguide </a>
+              </li>
+              <li>
+                <a href="#"> licnesing </a>
+              </li>
+              <li>
+                <a href="#"> changelog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="developed-by common-padding-inline">
+          developed with love by aman | @webwithaman
+        </p>
       </footer>
+      <!-- Footer End -->
     </div>
     <!-- Site Wrapper End -->
   </body>

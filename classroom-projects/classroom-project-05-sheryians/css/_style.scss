@@ -1,5 +1,5 @@
 // Google Fonts Import
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 // Reset Default Styles Start
 *,
@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $secondary-font-family;
 }
 
 html {
@@ -18,8 +19,6 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: $primary-font-family;
-  color: $black;
 }
 // Reset Default Styles End
 
@@ -37,9 +36,8 @@ ul {
 img {
   max-width: 100%;
   width: 100%;
-  border-radius: 2rem;
+  height: 100%;
   object-fit: cover;
-  filter: drop-shadow(rgba(0, 0, 0, 0.591) 2px 2px 3px);
 }
 
 h1,
@@ -48,105 +46,132 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-family: $primary-font-family;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  font-weight: 360;
+}
+
+p {
+  letter-spacing: 0.3px;
 }
 // Common Styles for Frequently Used Elements End
 
-// Reusable Components & Utility Classes Start
-.common-padding-inline {
-  padding-inline: 2rem;
-}
-
-.common-padding-block {
-  padding-block: 3rem;
-}
-
-.primary-btn {
-  border: 2px solid $black;
-  background: $black;
-  color: $white;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-  font-size: 1.5rem;
-  padding: 0.7em 1.1em;
-  border-radius: 3rem;
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  text-transform: capitalize;
-  font-family: $primary-font-family;
-}
-
-.primary-btn:hover {
-  background: $white;
-  color: $black;
-}
-
-.section-primary-heading {
-  font-size: 3.2rem;
-  margin-bottom: 0.8em;
-  font-weight: 600;
-}
-// Reusable Components & Utility Classes Start
-
 // Page-Specific Styles Start
-
-// Navbar Start
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-block: 2rem;
+  padding-top: 2.2rem;
+  padding-bottom: 1rem;
 
   .logo {
-    font-size: 2.5rem;
+    width: 6rem;
   }
 
-  #checkbox-for-toggle {
-    display: none;
-  }
-
-  #checkbox-for-toggle:checked + .nav-links {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    font-weight: 500;
-    background-color: $black;
-    letter-spacing: 0.4px;
-
-    li {
-      font-size: 1.4rem;
-      padding: 1.3em 2.1em;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.594);
-      padding-block: 1em;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      a {
-        color: $white;
-      }
-    }
-  }
-
-  .button-toggle-box {
+  .navbar-right {
     display: flex;
     align-items: center;
-    gap: 1.8rem;
+    gap: 2rem;
 
-    .toggle-bar {
-      font-size: 3.5rem;
-      font-weight: 900;
+    #checkbox-for-toggle {
+      display: none;
+    }
+
+    #checkbox-for-toggle:checked + .nav-links {
+      display: flex;
+    }
+
+    #checkbox-for-toggle:checked
+      ~ .toggle-btns
+      .toggle-bar
+      .toggle-bar-line:nth-child(2) {
+      width: 0;
+    }
+
+    #checkbox-for-toggle:checked
+      ~ .toggle-btns
+      .toggle-bar
+      .toggle-bar-line:nth-child(1) {
+      transform-origin: right top;
+      transform: rotate(-37deg);
+    }
+
+    #checkbox-for-toggle:checked
+      ~ .toggle-btns
+      .toggle-bar
+      .toggle-bar-line:nth-child(3) {
+      transform-origin: right bottom;
+      transform: rotate(35deg);
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 2.3rem - 2.3rem);
+      flex-direction: column;
+      font-size: 1.3rem;
+      font-weight: 400;
+      background-color: $black;
+      padding: 2rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      li {
+        padding-block: 1em;
+        letter-spacing: 0.5px;
+
+        a {
+          color: $white;
+        }
+      }
+
+      button.primary-btn {
+        width: 100%;
+        background-color: $white;
+        color: $black;
+      }
+    }
+
+    .toggle-btns {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      cursor: pointer;
+
+      & > span {
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      button {
+        display: none;
+      }
+
+      .toggle-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.9rem;
+      }
+
+      .toggle-bar {
+        .toggle-bar-line:nth-child(2) {
+          transition: all 0.5s ease-out 0s;
+        }
+
+        .toggle-bar-line {
+          width: 3.2rem;
+          height: 0.1rem;
+          background-color: $black;
+          transition: all 0.2s ease-out 0.2s;
+        }
+      }
     }
   }
 }
@@ -154,225 +179,343 @@ h6 {
 
 // Hero Section Start
 .hero {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  padding-top: 3rem;
+  @include flex-properties($des-dir: column, $des-gap: 3rem);
 
-  .hero-left {
-    .hero-left-text {
-      h1 {
-        font-size: 5rem;
-
-        span {
-          color: $secondary-color;
-        }
-      }
+  .hero-top-text {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
 
       p {
-        font-size: 1.5rem;
-        margin-block: 0.6em 1.2em;
+        font-size: 1.3rem;
+        text-transform: uppercase;
       }
     }
   }
 
-  .hero-right {
-    .hero-right-grid {
-      display: grid;
-      gap: 2rem;
-      grid-template-areas:
-        "a b"
-        "a b"
-        "a b"
-        "a c"
-        "a c"
-        "a c";
+  .hero-bottom {
+    @include flex-properties($des-dir: row-reverse);
 
-      .img-box {
-        border-radius: 2rem;
-        background-size: cover;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    .hero-bottom-img {
+      aspect-ratio: 1;
+    }
+
+    .hero-bottom-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: space-between;
+
+      p {
+        font-size: 1.8rem;
+        margin-top: 2rem;
       }
 
-      .img-box:nth-child(1) {
-        background-image: url(https://img.freepik.com/free-photo/stunning-natural-landscape_23-2151893613.jpg?t=st=1739531942~exp=1739535542~hmac=e9097604952687eeae21f63086a79d6e9e6eb06c93a0e30430841f347c14b50d&w=740);
-        grid-area: a;
-      }
+      .hero-bottom-services {
+        @include flex-properties(
+          $mob-gap: 1.5rem,
+          $des-dir: column,
+          $des-gap: 1.5rem
+        );
 
-      .img-box:nth-child(2) {
-        background-image: url(https://images.unsplash.com/photo-1524338198850-8a2ff63aaceb?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-        grid-area: b;
-        height: 17rem;
-      }
+        hr {
+          border: none;
+          background-color: rgba(128, 128, 128, 0.354);
+          height: 1.2px;
+        }
 
-      .img-box:nth-child(3) {
-        background-image: url(https://img.freepik.com/free-photo/stunning-natural-landscape_23-2151893581.jpg?t=st=1739532372~exp=1739535972~hmac=b6d1fdce07150d95e7e08406dc7477552b4b9cc6d8f4e1b815a033e45f4e675f&w=1060);
-        grid-area: c;
-        height: 10rem;
+        .service {
+          display: flex;
+          justify-content: space-between;
+
+          h4 {
+            font-size: 2.8rem;
+          }
+        }
       }
     }
   }
 }
 // Hero Section End
 
-// Top Destinations Section Start
-.destinations-boxes {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
-  display: flex;
-  padding: 3rem;
-  gap: 3rem;
-  overflow-x: auto;
-  border-radius: 2rem 2rem 0 0;
+// Tailored Section Start
+.tailored {
+  padding-top: 3rem;
+  @include flex-properties();
 
-  &::-webkit-scrollbar {
-    height: 1.1rem;
-  }
+  .tailored-text {
+    @include flex-properties(
+      $mob-dir: row,
+      $des-dir: row-reverse,
+      $des-gap: 3rem
+    );
 
-  &::-webkit-scrollbar-track {
-    background-color: $white;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.203) inset;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-  }
-
-  .destination-box {
-    flex-shrink: 0;
-    width: 25rem;
-    border-radius: 2rem 2rem 0 0;
-
-    img {
-      border-radius: 2rem;
-      aspect-ratio: 1/1.4;
-      filter: drop-shadow(rgba(0, 0, 0, 0.591) 2px 2px 3px);
+    & > p {
+      writing-mode: vertical-rl;
+      text-transform: uppercase;
+      font-size: 1.3rem;
     }
 
-    h3 {
-      font-size: 2rem;
-      color: $black;
-      padding: 0.3em 0 0 0.3em;
-      font-weight: 500;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p {
+        font-size: 1.8rem;
+        color: $light-text-color;
+        margin-top: 2rem;
+      }
     }
   }
 }
-// Top Destinations Section End
+// Tailored Section End
 
-// latest Stories Section Start
-.latest-stories-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+// Services Section Start
+.services {
+  padding-block: 6.4rem;
+  @include flex-properties();
 
-  h3 {
-    font-size: 2.4rem;
-    font-weight: 500;
-    margin-top: 0.5em;
-  }
+  .services-text {
+    .services-boxes {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
 
-  p {
-    font-size: 1.6rem;
-    margin-block: 0.7em 0.9em;
-  }
+      .service-box {
+        padding-top: 2rem;
+        border-top: 1px solid rgba(128, 128, 128, 0.477);
 
-  .latest-stories-right {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-
-    .latest-stories-right-box {
-      display: flex;
-      align-items: flex-start;
-      gap: 2rem;
-
-      div:first-child {
-        flex: 0.8;
-
-        img {
-          aspect-ratio: 1;
-        }
-      }
-
-      div:last-child {
-        flex: 1.2;
-
-        span {
-          color: $secondary-color;
-          font-size: 1.5rem;
-        }
-
-        h3 {
-          margin-block: 0.2em;
+        h4 {
+          font-size: 2.4rem;
+          font-weight: 360;
         }
 
         p {
-          margin: 0;
+          font-size: 1.6rem;
+          color: $light-text-color;
+          margin-top: 2rem;
         }
       }
     }
   }
 }
-// latest Stories Section End
+// Services Section End
 
-// Highlights Section Start
-.highlights-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+// Selected Work Section Start
+.selected-work {
+  padding-top: 3rem;
+  border-top: 1.2px solid rgba(128, 128, 128, 0.244);
+  @include flex-properties($des-dir: column, $des-gap: 3rem);
 
-  .highlights-left {
-    .highlights-left-profile {
+  .selected-work-boxes {
+    @include flex-properties($des-gap: 3rem);
+
+    & > div {
+      flex: 1;
+    }
+
+    & > div:nth-child(2) {
+      display: none;
+    }
+
+    & > div:last-child {
       display: flex;
-      gap: 2rem;
+      flex-direction: column;
+      justify-content: space-between;
 
-      img {
-        width: 6rem;
-        aspect-ratio: 1;
-        border-radius: 50%;
+      h4 {
+        font-size: 3.6rem;
       }
 
-      div {
-        h4 {
-          font-size: 2.2rem;
-          font-weight: 500;
-        }
-        span {
-          color: $secondary-color;
-          font-size: 1.5rem;
-        }
-      }
-    }
-    h3 {
-      font-size: 2.4rem;
-      font-weight: 500;
-      margin-block: 0.5em 0.2em;
-    }
-    p {
-      font-size: 1.6rem;
-    }
-  }
-
-  .highlights-right {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-
-    div {
       p {
         font-size: 1.6rem;
-        margin-block: 0.3em 0.5em;
+        color: $light-text-color;
+        margin-top: 2rem;
       }
     }
   }
 }
-// Highlights Section End
+// Selected Work Section End
+
+// Clients Section Start
+.clients {
+  padding-block: 4.8rem;
+
+  .clients-data {
+    margin-top: 3rem;
+    @include flex-properties($des-dir: column, $des-gap: 3rem);
+
+    .client-data {
+      @include flex-properties($mob-gap: 1.5rem, $des-gap: 1.5rem);
+      align-items: center;
+
+      p {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+      }
+
+      & > div {
+        @include flex-properties($mob-gap: 1.5rem, $des-gap: 3rem);
+        align-items: center;
+
+        h5 {
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
+}
+// Clients Section End
+
+// Team Section Start
+.team {
+  padding-block: 4.8rem;
+  border-top: 1.2px solid rgba(128, 128, 128, 0.244);
+  @include flex-properties($des-dir: column);
+
+  .team-header {
+    @include flex-properties();
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .team-members {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    .team-member {
+      h5 {
+        font-size: 2.4rem;
+      }
+
+      .team-member-img {
+        margin-block: 1.5rem;
+      }
+
+      .role {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h6 {
+          font-size: 1.3rem;
+        }
+
+        .socials {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+
+          a {
+            color: $black;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: $light-text-color;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+// Team Section End
 
 // Footer Start
 footer {
+  padding-block: 3rem;
   background-color: $black;
   color: $white;
-  font-size: 1.4rem;
-  padding-block: 1rem;
+
+  button.primary-btn {
+    background-color: $white;
+    color: $black;
+  }
+
+  .footer-top {
+    padding-block: 6rem;
+    text-align: center;
+
+    h1 {
+      color: $white;
+      margin-block: 2rem;
+      font-size: 3.6rem;
+    }
+  }
+
+  hr {
+    border: none;
+    background-color: rgba(121, 121, 121, 0.991);
+    height: 1.2px;
+  }
+
+  .footer-bottom {
+    padding-block: 3rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .logo {
+        width: 9rem;
+        height: auto;
+      }
+
+      h6 {
+        font-size: 1.8rem;
+      }
+
+      ul {
+        @include flex-properties(
+          $mob-gap: 1.7rem,
+          $des-dir: column,
+          $des-gap: 2rem
+        );
+
+        font-size: 1.3rem;
+        text-transform: uppercase;
+
+        li {
+          a {
+            color: $white;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+              width: 4rem;
+              aspect-ratio: 1;
+              display: grid;
+              place-content: center;
+              background-color: $white;
+              color: $black;
+              font-size: 2rem;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .developed-by {
+    color: $light-text-color;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
 }
 // Footer End
 

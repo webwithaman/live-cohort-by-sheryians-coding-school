@@ -1,0 +1,15 @@
+@mixin flex-properties(
+  $mob-dir: column,
+  $mob-gap: 3rem,
+  $des-dir: row,
+  $des-gap: 5rem
+) {
+  display: flex;
+  flex-direction: $mob-dir;
+  gap: $mob-gap;
+
+  @media (min-width: 990px) {
+    flex-direction: $des-dir;
+    gap: $des-gap;
+  }
+}

@@ -9,7 +9,7 @@ Each question is solved in its respective folder, but for convenience, the quest
 1. **Question 01:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let i = 11;
 i = i++ + ++i;
@@ -19,7 +19,7 @@ console.log(i);
 2. **Question 02:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let a = 11,
   b = 22,
@@ -33,7 +33,7 @@ console.log("c=" + c);
 3. **Question 03:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let i = 0;
 i = i++ + --i + ++i - i--;
@@ -43,7 +43,7 @@ console.log(i);
 4. **Question 04:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let b = true;
 b++;
@@ -53,7 +53,7 @@ console.log(b);
 5. **Question 05:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let i = 1,
   j = 2,
@@ -68,7 +68,7 @@ console.log("m=" + m);
 6. **Question 06:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let a = 1,
   b = 2;
@@ -78,7 +78,7 @@ console.log(-b + ++a + ++b - -a);
 7. **Question 07:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let i = 19,
   j = 29,
@@ -101,7 +101,7 @@ let j = --(i++);
 9. **Question 09:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let m = 0,
   n = 0;
@@ -113,7 +113,7 @@ console.log(p);
 10. **Question 10:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let a = 1;
 a = a++ + ++a * --a - a--;
@@ -132,7 +132,7 @@ console.log(a);
 12. **Question 12:**
 
 ```
-Find Output of the Following Code:
+// Find Output of the Following Code:
 
 let i = 0,
   j = 0;

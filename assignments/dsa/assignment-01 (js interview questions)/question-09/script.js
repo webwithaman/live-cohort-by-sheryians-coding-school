@@ -5,4 +5,4 @@ let m = 0,
 
 let p = --m * --n * n-- * m--;
 
-console.log(p);
+console.log(p); // 1

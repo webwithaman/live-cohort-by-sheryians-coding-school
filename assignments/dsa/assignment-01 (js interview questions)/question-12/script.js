@@ -3,4 +3,4 @@
 let i = 0,
   j = 0;
 
-console.log(--i * i++ * ++j * j++);
+console.log(--i * i++ * ++j * j++); // 1

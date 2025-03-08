@@ -6,7 +6,7 @@ let i = 1,
 
 let m = i-- - j-- - k--;
 
-console.log("i=" + i);
-console.log("j=" + j);
-console.log("k=" + k);
-console.log("m=" + m);
+console.log("i=" + i); // i=0
+console.log("j=" + j); // j=1
+console.log("k=" + k); // k=2
+console.log("m=" + m); // m=-4

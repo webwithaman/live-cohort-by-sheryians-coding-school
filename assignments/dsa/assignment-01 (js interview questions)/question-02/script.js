@@ -6,6 +6,6 @@ let a = 11,
 
 c = a + b + a++ + b++ + ++a + ++b;
 
-console.log("a=" + a);
-console.log("b=" + b);
-console.log("c=" + c);
+console.log("a=" + a); // a=13
+console.log("b=" + b); // b=24
+console.log("c=" + c); // c=103

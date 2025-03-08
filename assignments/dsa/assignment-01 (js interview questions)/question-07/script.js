@@ -6,6 +6,6 @@ let i = 19,
 
 k = i-- - i++ + --j - ++j + --i - j-- + ++i - j++;
 
-console.log("i=" + i);
-console.log("j=" + j);
-console.log("k=" + k);
+console.log("i=" + i); // i=19
+console.log("j=" + j); // j=29
+console.log("k=" + k); // k=-20

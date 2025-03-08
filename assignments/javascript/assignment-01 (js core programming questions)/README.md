@@ -1,4 +1,4 @@
-# JavaScript Assignment 1
+# JavaScript Assignment 1 (JavaScript Programming Questions)
 
 This repository contains solutions to **25 core JavaScript programming questions**, specifically designed to strengthen your understanding of JavaScript programming fundamentals. The questions focus on key concepts such as control statements, loops, conditions, and basic logic. Each problem has been solved using JavaScript, with the goal of helping you improve your ability to write efficient and effective JavaScript code.
 

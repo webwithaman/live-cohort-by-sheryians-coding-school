@@ -1,4 +1,4 @@
-// Find Output
+// Find Output of the Following Code:
 
 let a = 1,
   b = 2;

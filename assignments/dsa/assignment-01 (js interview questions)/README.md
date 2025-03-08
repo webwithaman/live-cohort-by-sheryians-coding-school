@@ -92,7 +92,7 @@ console.log("k=" + k);
 8. **Question 08:**
 
 ```
-Find any Syntax Error or Logical Issue in the following Code:
+// Find any Syntax Error or Logical Issue in the following Code:
 
 let i = 11;
 let j = --(i++);
@@ -123,7 +123,7 @@ console.log(a);
 11. **Question 11:**
 
 ```
-Find any Syntax Error or Logical Issue in the following Code:
+// Find any Syntax Error or Logical Issue in the following Code:
 
 let a = 11++;
 console.log(a);

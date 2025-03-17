@@ -13,99 +13,54 @@ Hint: Use conditions:
 */
 
 // Function to Find Number of Days in Given Month & Year
-const numberOfDays = (radius) => {
-  return Math.PI * radius * radius;
-};
+const numberOfDays = (month, year) => {
+  switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      return 31;
 
-// User's Choice
-let userChoice;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      return 30;
 
-do {
-  console.log("\n-----------------------------------------------");
-  console.log(`Enter "Circle' to Find Area of Circle`);
-  console.log(`Enter "Rectangle' to Find Area of Rectangle`);
-  console.log(`Enter "Triangle' to Find Area of Triangle`);
-  console.log(`Enter "Exit' For Exit`);
-  console.log("-----------------------------------------------");
-  userChoice = prompt("Enter Your Choice").toLowerCase();
-
-  switch (userChoice) {
-    case "circle":
-      let radius = prompt("Enter Radius of Circle to Find Area");
-
-      // If radius is null or empty
-      if (!radius) console.log("Did Not Give Any Input!!!");
-      // Convert Input into Number
-      else {
-        radius = Number(radius);
-
-        // Check for Invalid Input & If Valid then Call numberOfDays()
-        if (isNaN(radius)) console.log("Invalid Input!!!");
-        else console.log("\nArea of Circle: ", numberOfDays(radius));
-      }
-      break;
-
-    case "rectangle":
-      let length = prompt("Enter Length");
-      let breadth = prompt("Enter Breath");
-
-      // If length is null or empty
-      if (!length) console.log("Did Not Give Any Input!!!");
-      else {
-        // Convert Input into Number
-        length = Number(length);
-
-        // Check for Invalid Input
-        if (isNaN(length)) console.log("Invalid Input!!!");
-        else {
-          // If  breadth is null or empty
-          if (!breadth) console.log("Did Not Give Any Input!!!");
-          else {
-            // Convert Input into Number
-            breadth = Number(breadth);
-
-            // Check for Invalid Input & If Valid then Call areaOfRectangle()
-            if (isNaN(breadth)) console.log("\nInvalid Input!!!");
-            else
-              console.log(
-                "\nArea of Rectangle: ",
-                areaOfRectangle(length, breadth)
-              );
-          }
-        }
-      }
-      break;
-
-    case "triangle":
-      let base = prompt("Enter Breadth");
-      let height = prompt("Enter Height");
-
-      // If base is null or empty
-      if (!base) console.log("Did Not Give Any Input!!!");
-      else {
-        // Convert Input into Number
-        base = Number(base);
-
-        // Check for Invalid Input
-        if (isNaN(base)) console.log("Invalid Input!!!");
-        else {
-          // If  height is null or empty
-          if (!height) console.log("Did Not Give Any Input!!!");
-          else {
-            // Convert Input into Number
-            height = Number(height);
-
-            // Check for Invalid Input & If Valid then Call areaOfTriangle()
-            if (isNaN(height)) console.log("Invalid Input!!!");
-            else
-              console.log("\nArea of Triangle: ", areaOfTriangle(base, height));
-          }
-        }
-      }
-      break;
+    case 2:
+      if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) return 29;
+      return 28;
 
     default:
-      if (userChoice === "exit") break;
-      console.log("Invalid Input!!!");
+      return undefined;
   }
-} while (userChoice !== "exit");
+};
+
+let month = prompt("Enter Month Number (1 to 12)", 2);
+
+// If Month is null or empty
+if (!month) console.log("Did Not Give Any Input!!!");
+else {
+  // Convert Input into Number
+  month = Number(month);
+
+  // Check for Invalid Input
+  if (isNaN(length)) console.log("Invalid Input!!!");
+  else {
+    let year = prompt("Enter A Year");
+
+    // If Year is null or empty
+    if (!year) console.log("Did Not Give Any Input!!!");
+    else {
+      // Convert Input into Number
+      year = Number(year);
+
+      // Check for Invalid Input & If Valid then Call numberOfDays()
+      if (isNaN(year)) console.log("\nInvalid Input!!!");
+      else console.log("Number of Days: ", numberOfDays(month, year));
+    }
+  }
+}

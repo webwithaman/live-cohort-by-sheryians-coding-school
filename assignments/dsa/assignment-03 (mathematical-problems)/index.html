@@ -7,35 +7,44 @@
   </head>
   <body>
     <script>
-      const isHarshadNumber = (num) => {
-        if (num <= 0) return false;
-        if (num < 10) return true;
+      // Function to Check Whether a nber is Perfect Square or Not (Accept Agrgument as nber & Return Boolean Value)
+      const printfibonacciSeries = (n) => {
+        // Handling Negative Numbers
+        n = Math.abs(n);
 
-        let sumOfDigits = 0,
-          copyOfNum = num;
+        // Handling Decimal Numbers
+        n = Math.round(n);
 
-        while (copyOfNum) {
-          sumOfDigits += copyOfNum % 10;
-          copyOfNum = parseInt(copyOfNum / 10);
+        // n is 0
+        if (n === 0) return;
+
+        let prev = -1,
+          next = 1,
+          sum,
+          series = "";
+
+        for (let i = 1; i <= n; i++) {
+          sum = prev + next;
+          series += sum + " ";
+          prev = next;
+          next = sum;
         }
 
-        return num % sumOfDigits === 0;
+        console.log(series);
       };
 
       // Take Input from User through Prompt
-      let num = prompt("Enter A Number to Check Whether It is Harshad or Not");
+      let n = prompt("Enter N to Print N Terms of Fibonacci Series", 10);
 
-      // If num is null or empty
-      if (!num) console.log("Did Not Give Any Input!!!");
+      // If n is null or empty
+      if (!n) console.log("Did Not Give Any Input!!!");
       else {
         // Convert Input into Number
-        num = Number(num);
+        n = Number(n);
 
-        // Check for Invalid Input & If Valid then Call isHarshadNumber()
-        if (isNaN(num)) console.log("Invalid Input!!!");
-        else if (isHarshadNumber(num))
-          console.log(`Yes, ${num} is a Harshad Number`);
-        else console.log(`No, ${num} is not a Harshad Number`);
+        // Check for Invalid Input & If Valid then Call printfibonacciSeries()
+        if (isNaN(n)) console.log("Invalid Input!!!");
+        else printfibonacciSeries(n);
       }
     </script>
   </body>

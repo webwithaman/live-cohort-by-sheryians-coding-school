@@ -43,9 +43,13 @@ const HCF = (num1, num2) => {
 
 // Take Input from User through Prompt as String
 let userInput = prompt(
-  "Enter Two Numbers to Find HCF/GCD Seperated by Space",
+  "Enter Two Numbers (Integers) to Find HCF/GCD Seperated by Space ",
   "18 24"
 );
+
+// If Arguments are Floating Point Numbers, Convert into Integers
+num1 = Math.round(num1);
+num2 = Math.round(num2);
 
 // If userInput is null
 if (!userInput) console.log("Did Not Give Any Input!!!");

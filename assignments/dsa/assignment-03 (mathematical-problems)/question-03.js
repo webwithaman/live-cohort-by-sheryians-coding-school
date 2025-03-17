@@ -15,7 +15,10 @@ Hint: Extract digits using modulo (%) and integer division (//).
 
 // Function to Check Whether a Number is a Harshad Number or Not (Accept Agrgument as Number & Return Boolean Value)
 const isHarshadNumber = (num) => {
-  if (num <= 0) return false;
+  // If num is less than & equal to 0 or num is Floating Point Number
+  if (num <= 0 || !Number.isInteger(num)) return false;
+
+  // if num is between 1 to 9
   if (num < 10) return true;
 
   let sumOfDigits = 0,
@@ -23,14 +26,16 @@ const isHarshadNumber = (num) => {
 
   while (copyOfNum) {
     sumOfDigits += copyOfNum % 10;
-    copyOfNum = parseInt(copyOfNum / 10);
+    copyOfNum = Math.floor(copyOfNum / 10);
   }
 
   return num % sumOfDigits === 0;
 };
 
 // Take Input from User through Prompt
-let num = prompt("Enter A Number to Check Whether It is Harshad or Not");
+let num = prompt(
+  "Enter A Number (whole Number) to Check Whether It is Harshad or Not"
+);
 
 // If num is null or empty
 if (!num) console.log("Did Not Give Any Input!!!");

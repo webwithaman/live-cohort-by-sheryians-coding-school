@@ -29,7 +29,7 @@ const isValidISBN = (ISBN) => {
 
     while (ISBN) {
       sum += (ISBN % 10) * revPos--;
-      ISBN = parseInt(ISBN / 10);
+      ISBN = Math.floor(ISBN / 10);
     }
 
     return sum % 11 === 0;

@@ -8,7 +8,7 @@ Example:
 Input: Month = 2, Year = 2024
 Output: 29
 
-Hint: Use conditions:
+Hint: Use conditions/switch:
 
 */
 

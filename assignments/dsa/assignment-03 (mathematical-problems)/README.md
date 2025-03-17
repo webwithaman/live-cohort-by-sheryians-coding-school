@@ -1,4 +1,4 @@
-# DSA Assignment 2 (Conditionals in JS)
+# DSA Assignment 3 (Mathematical Problems)
 
 This repository contains solutions to JavaScript conditional problems, specifically designed to strengthen your understanding of JavaScript's decision-making structures. The questions focus on key concepts such as if-else statements, nested conditionals, and ladder structures. Each problem has been solved using JavaScript, with the goal of helping you improve your ability to write accurate and efficient conditional logic, especially in the context of technical interviews. Examples include tasks like breaking down currency into notes, handling ranges, and solving complex problems using nested and ladder if-else statements.
 

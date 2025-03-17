@@ -15,9 +15,9 @@ Hint: Use the Euclidean algorithm: GCD(a, b) = GCD(b, a % b).
 
 // Function to Find HCF/GCD of Two Numbers (Accept Arguments as Numbers & Return HCF as Number)
 const HCF = (num1, num2) => {
-  // Handle Negtive Numbers (Always Work with Absolute Values)
-  num1 = Math.abs(num1);
-  num2 = Math.abs(num2);
+  // Handle Negative & Decimal Numbers
+  num1 = Math.round(Math.abs(num1));
+  num2 = Math.round(Math.abs(num2));
 
   if (num1 === 1 || num2 === 1) return 1;
   if (num1 === 0 || num1 === num2) return num2;
@@ -36,7 +36,7 @@ const HCF = (num1, num2) => {
   // let minNum = Math.min(num1, num2),
   //   maxNum = Math.max(num1, num2);
   // if (maxNum % minNum === 0) return minNum;
-  // for (i = Math.floor(minNum / 2); i; i--)
+  // for (let i = Math.floor(minNum / 2); i; i--)
   //   if (minNum % i === 0 && maxNum % i === 0) return i;
   // return 1;
 };
@@ -47,10 +47,6 @@ let userInput = prompt(
   "18 24"
 );
 
-// If Arguments are Floating Point Numbers, Convert into Integers
-num1 = Math.round(num1);
-num2 = Math.round(num2);
-
 // If userInput is null
 if (!userInput) console.log("Did Not Give Any Input!!!");
 else {
@@ -60,6 +56,10 @@ else {
   // Validate Input & Find HCF If Valid
   if (convertedArr.length === 2) {
     let [num1, num2] = convertedArr;
+
+    // If Arguments are Floating Point Numbers, Convert into Integers
+    num1 = Math.round(num1);
+    num2 = Math.round(num2);
 
     if (Number.isNaN(num1) || Number.isNaN(num2))
       console.log("Invalid Input!!!");

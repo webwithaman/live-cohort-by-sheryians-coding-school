@@ -34,7 +34,7 @@ const isHarshadNumber = (num) => {
 
 // Take Input from User through Prompt
 let num = prompt(
-  "Enter A Number (whole Number) to Check Whether It is Harshad or Not"
+  "Enter A Number (Whole Number) to Check Whether It is a Harshad Number or Not"
 );
 
 // If num is null or empty

@@ -11,21 +11,19 @@ Output: 2, 3, 5
 Hint: Use division method.
 
 */
-
-// Function to Check Whether a nber is Perfect Square or Not (Accept Argument as nber & Return Boolean Value)
-const numbersWithXDivisors = (n) => {
+// Function to Find All Prime Factors of a Number (Accept Argument as Number & Return an Array)
+const primeFactors = (num) => {
   // Handling Negative & Decimal Numbers
-  n = Math.round(Math.abs(n));
-  x = Math.round(Math.abs(x));
+  num = Math.round(Math.abs(num));
 
-  if (n < 2) return [];
+  if (num < 2) return [];
 
   let finalOutput = [],
     primeFactor = 2;
 
-  while (n !== 1) {
-    while (n % primeFactor === 0) {
-      n /= primeFactor;
+  while (num !== 1) {
+    while (num % primeFactor === 0) {
+      num /= primeFactor;
       finalOutput.push(primeFactor);
     }
     primeFactor++;
@@ -46,7 +44,7 @@ else {
   // Check for Invalid Input & If Valid then Call primeFactors()
   if (isNaN(num)) console.log("Invalid Input!!!");
   else {
-    let output = primeFactors(n);
+    let output = primeFactors(num);
     for (let o of output) console.log(o);
   }
 }

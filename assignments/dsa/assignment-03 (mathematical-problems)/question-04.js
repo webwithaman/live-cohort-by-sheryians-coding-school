@@ -13,7 +13,7 @@ Hint: Use sqrt(N), check if it’s an integer.
 
 */
 
-// Function to Check Whether a Number is Perfect Square or Not (Accept Agrgument as Number & Return Boolean Value)
+// Function to Check Whether a Number is Perfect Square or Not (Accept Argument as Number & Return Boolean Value)
 const isPerfectSquare = (num) => {
   // Handling Negative Numbers
   if (num < 0) return false;

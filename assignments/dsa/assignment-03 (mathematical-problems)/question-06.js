@@ -1,6 +1,6 @@
 /*
 
-Question 05: Fibonacci Series using Loop
+Question 06: Fibonacci Series using Loop
 
 Description: Print Fibonacci series up to N terms using a loop.
 
@@ -12,42 +12,39 @@ Hint: Use a loop and store previous two numbers.
 
 */
 
-// Function to Check Whether a Number is Perfect Square or Not (Accept Agrgument as Number & Return Boolean Value)
-const isAbundantNumber = (num) => {
-  // // Handling Negative Numbers or num is Floating Point Number
-  if (num < 0 || !Number.isInteger(num)) return false;
+// Function to Find N Terms of Fibonacci Series (Accept Argument as Number & Return an Array)
+const fibonacciSeries = (n) => {
+  // Handling Negative & Decimal Number
+  n = Math.round(Math.abs(n));
 
-  let sum = 1;
+  let prev = -1,
+    next = 1,
+    sum,
+    output = [];
 
-  // Loop through divisors up to the square root of the number
-  for (var i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
-    if (!(num % i)) {
-      sum += i;
-
-      // Avoid adding the square root twice if `i` is the square root of `num`
-      if (i !== num / i) sum += num / i;
-    }
+  for (let i = 1; i <= n; i++) {
+    sum = prev + next;
+    output.push(sum);
+    prev = next;
+    next = sum;
   }
 
-  // Return true if the sum of divisors is greater than the number
-  return sum > num;
+  return output;
 };
 
 // Take Input from User through Prompt
-let num = prompt(
-  "Enter A Number (Whole Number) to Check Whether It is an Abundant Number or Not",
-  25
-);
+let n = prompt("Enter N to Find First N Terms of Fibonacci Series", 10);
 
 // If num is null or empty
-if (!num) console.log("Did Not Give Any Input!!!");
+if (!n) console.log("Did Not Give Any Input!!!");
 else {
   // Convert Input into Number
-  num = Number(num);
+  n = Number(n);
 
-  // Check for Invalid Input & If Valid then Call isAbundantNumber()
-  if (isNaN(num)) console.log("Invalid Input!!!");
-  else if (isAbundantNumber(num))
-    console.log(`Yes, ${num} is an Abundant Number`);
-  else console.log(`No, ${num} is not an Abundant Number`);
+  // Check for Invalid Input & If Valid then Call fibonacciSeries()
+  if (isNaN(n)) console.log("Invalid Input!!!");
+  else {
+    let output = fibonacciSeries(n);
+    for (let o of output) console.log(o);
+  }
 }

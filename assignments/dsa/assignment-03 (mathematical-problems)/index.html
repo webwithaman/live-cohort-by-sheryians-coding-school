@@ -7,44 +7,42 @@
   </head>
   <body>
     <script>
-      // Function to Check Whether a nber is Perfect Square or Not (Accept Agrgument as nber & Return Boolean Value)
-      const printfibonacciSeries = (n) => {
-        // Handling Negative Numbers
-        n = Math.abs(n);
+      // Function to Find All Prime Factors of a Number (Accept Argument as Number & Return an Array)
+      const primeFactors = (num) => {
+        // Handling Negative & Decimal Numbers
+        num = Math.round(Math.abs(num));
 
-        // Handling Decimal Numbers
-        n = Math.round(n);
+        if (num < 2) return [];
 
-        // n is 0
-        if (n === 0) return;
+        let finalOutput = [],
+          primeFactor = 2;
 
-        let prev = -1,
-          next = 1,
-          sum,
-          series = "";
-
-        for (let i = 1; i <= n; i++) {
-          sum = prev + next;
-          series += sum + " ";
-          prev = next;
-          next = sum;
+        while (num !== 1) {
+          while (num % primeFactor === 0) {
+            num /= primeFactor;
+            finalOutput.push(primeFactor);
+          }
+          primeFactor++;
         }
 
-        console.log(series);
+        return finalOutput;
       };
 
       // Take Input from User through Prompt
-      let n = prompt("Enter N to Print N Terms of Fibonacci Series", 10);
+      let num = prompt("Enter A Number to Find Its Prime Factors", 32);
 
-      // If n is null or empty
-      if (!n) console.log("Did Not Give Any Input!!!");
+      // If num is null or empty
+      if (!num) console.log("Did Not Give Any Input!!!");
       else {
         // Convert Input into Number
-        n = Number(n);
+        num = Number(num);
 
-        // Check for Invalid Input & If Valid then Call printfibonacciSeries()
-        if (isNaN(n)) console.log("Invalid Input!!!");
-        else printfibonacciSeries(n);
+        // Check for Invalid Input & If Valid then Call primeFactors()
+        if (isNaN(num)) console.log("Invalid Input!!!");
+        else {
+          let output = primeFactors(num);
+          for (let o of output) console.log(o);
+        }
       }
     </script>
   </body>

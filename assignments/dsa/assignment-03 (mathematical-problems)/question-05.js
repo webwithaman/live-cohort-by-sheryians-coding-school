@@ -13,7 +13,7 @@ Hint: Use a loop to find proper divisors.
 
 */
 
-// Function to Check Whether a Number is Perfect Square or Not (Accept Agrgument as Number & Return Boolean Value)
+// Function to Check Whether a Number is an Abundant Number or Not (Accept Argument as Number & Return Boolean Value)
 const isAbundantNumber = (num) => {
   // // Handling Negative Numbers or num is Floating Point Number
   if (num < 0 || !Number.isInteger(num)) return false;

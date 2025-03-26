@@ -1,6 +1,6 @@
 ## Classroom Project 5 by Sheryians Coding School
 
-This is a responsive and attractive agency/portfolio template built with HTML, CSS, and SCSS. It adapts seamlessly to all devices, showcasing services and projects with a clean, professional design.
+This is a responsive and attractive agency/portfolio template built with HTML, CSS, and SCSS. It adapts seamlessly to all devices, showcasing services, team & clients with a clean, professional design.
 
 ## Live Demo
 

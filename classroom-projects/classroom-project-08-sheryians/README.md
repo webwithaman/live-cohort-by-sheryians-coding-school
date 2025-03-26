@@ -1,6 +1,6 @@
-## Classroom Project 7 by Sheryians Coding School
+## Classroom Project 8 by Sheryians Coding School
 
-Color Clash: Test Your Luck is a fun and interactive web game where users generate a random target color and shuffle through colors to match it, testing their luck. Built using JavaScript and DOM manipulation, the game features dynamic color changes, sound effects for an engaging experience, and responsive design to ensure smooth gameplay on all devices. With visual and audio feedback, players are immersed in an exciting challenge to find the perfect match!
+This project features a download button that, once clicked, triggers a progress bar displaying the download progress percentage using setInterval. The progress bar and percentage indicator visually update until the download is complete. The download button becomes disabled after the first click, preventing re-downloads. The design is fully responsive, ensuring a smooth experience on all devices.
 
 ## Live Demo
 

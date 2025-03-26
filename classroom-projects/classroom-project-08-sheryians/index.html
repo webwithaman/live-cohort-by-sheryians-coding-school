@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Color Clash: Test Your Luck 🎲</title>
+    <title>File Download Progress Tracker</title>
 
     <!-- Custom External Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
@@ -15,30 +15,21 @@
   <body>
     <!-- Site Wrapper Start -->
     <div class="site-wrapper">
-      <!-- Game Title -->
-      <h1 class="game-title">💡 Color Clash: Test Your Luck 🎲</h1>
-
-      <!-- Game State Message -->
-      <h2 class="game-state-message">
-        🎯 Generate a color, shuffle, and test your luck! Can you match it? 🔄
-      </h2>
-
-      <!-- Boxes Container Start -->
-      <div class="boxes-container">
-        <div>
-          <div class="target-color-box box">
-            <h3>🎯 Awaiting Target Color</h3>
-          </div>
-          <button class="generate-color-btn">🎯 Generate Target</button>
+      <div class="file-download-box">
+        <div class="head">
+          <h2>File Downloader</h2>
         </div>
-        <div>
-          <div class="shuffled-color-box box">
-            <h3>🎰 Waiting to Shuffle...</h3>
+        <div class="body">
+          <div class="progress-bar-box">
+            <div class="progress-bar"></div>
           </div>
-          <button class="shuffle-color-btn">🎲 Start Color Shuffle</button>
+          <div class="file-text">
+            <span class="file-name">Tere-Liye.mp3</span>
+            <span class="progress-percent">0%</span>
+          </div>
         </div>
+        <button class="download">download</button>
       </div>
-      <!-- Boxes Container End -->
     </div>
     <!-- Site Wrapper End -->
 

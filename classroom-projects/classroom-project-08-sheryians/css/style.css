@@ -24,55 +24,56 @@ html {
   min-height: 100vh;
   background-color: #f5f6fa;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+}
+
+.file-download-box {
+  width: 100%;
+  max-width: 40rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.087);
+  background-color: #fff;
+}
+
+.head {
+  padding: 2rem;
+  color: #fff;
   text-align: center;
+  background-color: #ff9f1a;
 }
 
-/* Game Title */
-.game-title {
+.head h2 {
   font-weight: 550;
-  font-size: 3rem;
-  color: #192a56;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  word-spacing: 3px;
 }
 
-/* Game State Message */
-.game-state-message {
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: #2f3640;
-  animation: game-state-message-animate 1.2s linear infinite alternate;
+.body {
+  padding: 4rem 2rem;
 }
 
-@keyframes game-state-message-animate {
-  100% {
-    transform: scale(1.08);
-  }
+.progress-bar-box {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.171) inset,
+    -1px -1px 3px rgba(0, 0, 0, 0.171) inset;
+  height: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 0.6rem;
+  overflow: hidden;
 }
 
-/* Boxes Container Start */
-.boxes-container {
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #3d3d3d;
+}
+
+.file-text {
+  padding-inline: 0.6rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.boxes-container > div {
-  width: 27rem;
-}
-
-.boxes-container .box {
+  justify-content: space-between;
+  font-weight: 550;
   font-size: 1.2rem;
-  aspect-ratio: 1/0.7;
-  display: grid;
-  place-content: center;
-  border: 1.5rem solid white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.199);
-  margin-bottom: 2rem;
+  color: #3d3d3d;
 }
 
 button {
@@ -80,36 +81,26 @@ button {
   padding: 1.2rem 1.6rem;
   color: #fff;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 550;
   font-family: unset;
   text-transform: unset;
   letter-spacing: 0.3px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.139);
   border: none;
   cursor: pointer;
+  outline: none;
   transition: all 0.2s linear;
+  background-color: #07ff5e;
 }
 
-button:active {
-  transform: scale(0.87);
-}
-
-.generate-color-btn {
-  background-color: #2cb9ff;
-}
-
-.shuffle-color-btn {
-  background-color: #eb4d4b;
+button.download:active {
+  transform: scale(0.98);
 }
 
 /* Hover effects for devices that support hover (e.g., desktops) */
 @media (hover: hover) {
-  .generate-color-btn:hover {
-    background-color: #00aaff;
-  }
-
-  .shuffle-color-btn:hover {
-    background-color: #ff4c49;
+  button.download:hover {
+    background-color: #13db59;
   }
 }
 /* Boxes Container End */

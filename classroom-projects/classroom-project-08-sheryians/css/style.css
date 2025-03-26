@@ -1,0 +1,117 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* Reset Default Styles Start */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+/* Reset Default Styles End */
+
+/* Page-Specific Styles Start */
+.site-wrapper {
+  padding: 1.5rem;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+/* Game Title */
+.game-title {
+  font-weight: 550;
+  font-size: 3rem;
+  color: #192a56;
+  margin-bottom: 2rem;
+}
+
+/* Game State Message */
+.game-state-message {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #2f3640;
+  animation: game-state-message-animate 1.2s linear infinite alternate;
+}
+
+@keyframes game-state-message-animate {
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+/* Boxes Container Start */
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.boxes-container > div {
+  width: 27rem;
+}
+
+.boxes-container .box {
+  font-size: 1.2rem;
+  aspect-ratio: 1/0.7;
+  display: grid;
+  place-content: center;
+  border: 1.5rem solid white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.199);
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: unset;
+  text-transform: unset;
+  letter-spacing: 0.3px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.139);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+button:active {
+  transform: scale(0.87);
+}
+
+.generate-color-btn {
+  background-color: #2cb9ff;
+}
+
+.shuffle-color-btn {
+  background-color: #eb4d4b;
+}
+
+/* Hover effects for devices that support hover (e.g., desktops) */
+@media (hover: hover) {
+  .generate-color-btn:hover {
+    background-color: #00aaff;
+  }
+
+  .shuffle-color-btn:hover {
+    background-color: #ff4c49;
+  }
+}
+/* Boxes Container End */
+
+/* Page-Specific Styles End */

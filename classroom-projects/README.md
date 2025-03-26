@@ -26,3 +26,13 @@
 
 - [Live Demo](https://erikk-template-by-webwithaman.netlify.app/)
 - [Source Code](https://github.com/webwithaman/classroom-project-5-sheryians)
+
+## Classroom Project 6
+
+- [Live Demo](https://mysterious-box.netlify.app/)
+- [Source Code](https://github.com/webwithaman/classroom-project-6-sheryians)
+
+## Classroom Project 7
+
+- [Live Demo](https://color-clash-match-it.netlify.app/)
+- [Source Code](https://github.com/webwithaman/classroom-project-7-sheryians)

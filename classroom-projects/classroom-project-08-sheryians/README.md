@@ -4,4 +4,4 @@ This project features a download button that, once clicked, triggers a progress 
 
 ## Live Demo
 
-You can see a live demo of this website (https://color-clash-match-it.netlify.app/)
+You can see a live demo of this website (https://file-download-progress.netlify.app/)

@@ -28,6 +28,7 @@ html {
   align-items: center;
 }
 
+/* File Download Box Start */
 .file-download-box {
   width: 100%;
   max-width: 40rem;
@@ -103,6 +104,6 @@ button.download:active {
     background-color: #13db59;
   }
 }
-/* Boxes Container End */
+/* File Download Box End */
 
 /* Page-Specific Styles End */

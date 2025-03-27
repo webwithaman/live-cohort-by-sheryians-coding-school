@@ -33,3 +33,8 @@
 
 - [Live Demo](https://products-gallery-webwithaman.netlify.app/)
 - [Source Code](https://github.com/webwithaman/project-excercise-6-sheryians)
+
+## Project Exercise 7
+
+- [Live Demo](https://random-bgcolor-generator.netlify.app/)
+- [Source Code](https://github.com/webwithaman/project-exercise-7-by-sheryians)

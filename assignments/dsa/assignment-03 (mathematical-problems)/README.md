@@ -143,15 +143,16 @@ Hint: Use switch with case statements.
 10. **Question 10:**
 
 ```
-Question 08: Prime Factors
+Question 10: Neon Number
 
-Description: Find all prime factors of a number.
+Description: A number where the sum of digits of its square equals the number itself.
 
 Example:
-Input: 30
-Output: 2, 3, 5
+Input: 9
+Output: Neon Number
+Explanation: 9² = 81, sum of digits = 9.
 
-Hint: Use division method.
+Hint: Find square, sum digits, compare.
 ```
 
 11. **Question 11:**

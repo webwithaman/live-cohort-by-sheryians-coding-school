@@ -129,15 +129,15 @@ Hint: Use division method.
 9. **Question 09:**
 
 ```
-Question 08: Prime Factors
+Question 09: Calculate Area using Switch Statement
 
-Description: Find all prime factors of a number.
+Description: Find the area of a circle, rectangle, or triangle.
 
 Example:
-Input: 30
-Output: 2, 3, 5
+Input: Choice = Circle, Radius = 5
+Output: Area = 78.5
 
-Hint: Use division method.
+Hint: Use switch with case statements.
 ```
 
 10. **Question 10:**

@@ -32,7 +32,7 @@
 ## Project Exercise 6
 
 - [Live Demo](https://products-gallery-webwithaman.netlify.app/)
-- [Source Code](https://github.com/webwithaman/project-excercise-6-sheryians)
+- [Source Code](https://github.com/webwithaman/project-exercise-6-sheryians)
 
 ## Project Exercise 7
 

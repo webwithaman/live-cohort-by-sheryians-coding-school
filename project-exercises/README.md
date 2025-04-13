@@ -27,7 +27,7 @@
 ## Project Exercise 5
 
 - [Live Demo](https://stylish-contact-us-form-webwithaman.netlify.app/)
-- [Source Code](https://github.com/webwithaman/project-excercise-5-sheryians)
+- [Source Code](https://github.com/webwithaman/project-exercise-5-sheryians)
 
 ## Project Exercise 6
 

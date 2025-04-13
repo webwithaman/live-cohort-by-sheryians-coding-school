@@ -22,17 +22,17 @@
 ## Project Exercise 4
 
 - [Live Demo](https://delicious-food-two-col-layout-by-aman.netlify.app/)
-- [Source Code](https://github.com/webwithaman/project-excercise-4-sheryians)
+- [Source Code](https://github.com/webwithaman/project-exercise-4-sheryians)
 
 ## Project Exercise 5
 
 - [Live Demo](https://stylish-contact-us-form-webwithaman.netlify.app/)
-- [Source Code](https://github.com/webwithaman/project-excercise-5-sheryians)
+- [Source Code](https://github.com/webwithaman/project-exercise-5-sheryians)
 
 ## Project Exercise 6
 
 - [Live Demo](https://products-gallery-webwithaman.netlify.app/)
-- [Source Code](https://github.com/webwithaman/project-excercise-6-sheryians)
+- [Source Code](https://github.com/webwithaman/project-exercise-6-sheryians)
 
 ## Project Exercise 7
 

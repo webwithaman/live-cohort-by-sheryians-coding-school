@@ -22,7 +22,7 @@
 ## Project Exercise 4
 
 - [Live Demo](https://delicious-food-two-col-layout-by-aman.netlify.app/)
-- [Source Code](https://github.com/webwithaman/project-excercise-4-sheryians)
+- [Source Code](https://github.com/webwithaman/project-exercise-4-sheryians)
 
 ## Project Exercise 5
 

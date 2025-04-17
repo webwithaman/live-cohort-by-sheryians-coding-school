@@ -1,0 +1,93 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* CSS Variables Start */
+:root {
+  /* Theme Colors */
+  --black: #000;
+  --white: #fff;
+
+  /* Theme Fonts */
+  --font-family-1: "Lato", sans-serif;
+  --font-family-2: "Poppins", sans-serif;
+  --font-family-3: "Oswald", sans-serif;
+  --font-family-4: "Ubuntu", sans-serif;
+  --font-family-5: "Roboto", sans-serif;
+  --font-family-6: "Nunito", sans-serif;
+  --font-family-7: "Gideon", sans-serif;
+}
+/* CSS Variables End */
+
+/* Reset Default Styles Start */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* Reset Default Styles End */
+
+/* Common Styles for Frequently Used Elements Start */
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.6;
+}
+/* Common Styles for Frequently Used Elements End */
+
+/* Reusable Components & Utility Classes Start */
+/* Reusable Components & Utility Classes End */
+
+/* Page-Specific Styles Start */
+/* Page-Specific Styles End */
+
+/* Keyframes for Animations Start */
+@keyframes animation-name {
+  /* Define your keyframes here */
+}
+/* Keyframes for Animations End */

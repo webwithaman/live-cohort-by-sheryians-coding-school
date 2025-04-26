@@ -31,6 +31,7 @@ html {
   font-size: 62.5%; /* 1rem = 10px */
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: var(--font-family-2);
 }
 
 body {
@@ -60,34 +61,265 @@ textarea {
   outline: none;
 }
 
-img {
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.4;
-}
-
-p {
-  line-height: 1.6;
-}
 /* Common Styles for Frequently Used Elements End */
 
-/* Reusable Components & Utility Classes Start */
-/* Reusable Components & Utility Classes End */
-
 /* Page-Specific Styles Start */
+.site-wrapper {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(229, 255, 0, 0.253),
+      rgba(0, 0, 0, 0.224),
+      rgba(255, 0, 238, 0.358)
+    ),
+    url(../assets/images/bg-img.jpeg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.form-feedback-indicator {
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.094);
+  background-color: #fff;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  --color: rgb(0, 236, 0);
+  border-radius: 1rem;
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.form-feedback-indicator i {
+  width: 2.6rem;
+  height: 2.6rem;
+  text-align: center;
+  line-height: 2.6rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: var(--color);
+  color: white;
+}
+
+.form-feedback-indicator h6 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.1rem;
+}
+
+.form-feedback-indicator p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(176, 176, 176);
+  text-transform: capitalize;
+}
+
+.form-feedback-indicator::before {
+  content: "";
+  width: 0;
+  height: 0.5rem;
+  background-color: var(--color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-feedback-indicator.animate-form-feedback-indicator::before {
+  animation: animate-form-feedback-indicator 2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-form-feedback-indicator {
+  100% {
+    width: 100%;
+  }
+}
+
+.form-container {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.201);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.form-container h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  margin-top: -0.6rem;
+}
+
+.form-container .message {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(176, 176, 176);
+  text-transform: capitalize;
+}
+
+form {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group .warning {
+  padding-inline: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(252, 64, 64);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+.input-box {
+  background-color: rgb(237, 237, 237);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  border: 2px solid transparent;
+}
+
+.input-box:focus-within {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+}
+
+.input-box:focus-within input {
+  color: black;
+}
+
+.input-box i {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.input-box input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  font-family: var(--font-family-2);
+  font-weight: 500;
+  color: grey;
+  letter-spacing: 0.4px;
+}
+
+.input-box input::placeholder {
+  color: grey;
+}
+
+.submit-btn {
+  margin-top: 1.2rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.4px;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: var(--font-family-2);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+@media (hover: hover) {
+  .submit-btn:hover {
+    background-color: rgba(0, 0, 0, 0.945);
+  }
+}
+
+.form-container .or-signup {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(171, 171, 171);
+  text-transform: capitalize;
+  width: fit-content;
+  margin-inline: auto;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.2rem;
+}
+
+.icons img {
+  padding-top: 0.4rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.icons img:nth-child(2) {
+  width: 2.2rem;
+}
+
+.icons img:last-child {
+  padding-top: 0;
+  width: 2.7rem;
+}
 /* Page-Specific Styles End */
 
-/* Keyframes for Animations Start */
-@keyframes animation-name {
-  /* Define your keyframes here */
+@media screen and (max-width: 900px) {
+  .site-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-feedback-indicator {
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+    top: initial;
+    right: initial;
+  }
 }
-/* Keyframes for Animations End */
+
+@media (max-width: 340px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 260px) {
+  * {
+    word-wrap: break-word;
+  }
+
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 180px) {
+  * {
+    word-break: break-all;
+  }
+
+  html {
+    font-size: 18%;
+  }
+}

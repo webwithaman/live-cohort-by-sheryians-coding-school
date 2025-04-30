@@ -38,3 +38,18 @@
 
 - [Live Demo](https://random-bgcolor-generator.netlify.app/)
 - [Source Code](https://github.com/webwithaman/project-exercise-7-by-sheryians)
+
+## Project Exercise 8
+
+- [Live Demo](https://dynamic-list-builder-by-webwithaman.netlify.app/)
+- [Source Code](https://github.com/webwithaman/project-exercise-8-by-sheryians)
+
+## Project Exercise 9
+
+- [Live Demo](https://simple-calculator-by-webwithaman.netlify.app/)
+- [Source Code](https://github.com/webwithaman/project-exercise-9-by-sheryians)
+
+## Project Exercise 10
+
+- [Live Demo](https://form-validation-by-webwithaman.netlify.app/)
+- [Source Code](https://github.com/webwithaman/project-exercise-10-by-sheryians)

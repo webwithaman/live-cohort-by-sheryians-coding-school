@@ -7,7 +7,11 @@ let nameWarning = document.querySelector(".name-warning");
 let emailWarning = document.querySelector(".email-warning");
 let passwordWarning = document.querySelector(".password-warning");
 let inputFields = document.querySelectorAll("input:not(.submit-btn)");
+let formFeedbackIndicator = document.querySelector(".form-feedback-indicator");
 
+let isSubmissionOff = false;
+
+// Function to Validate Username
 const isValidUsername = (usernameValue) => {
   let isValid = true,
     warningMessage,
@@ -31,6 +35,7 @@ const isValidUsername = (usernameValue) => {
   return { isValid, warningMessage };
 };
 
+// Function to Validate Email
 const isValidEmail = (emailValue) => {
   let isValid = true,
     warningMessage;
@@ -52,6 +57,7 @@ const isValidEmail = (emailValue) => {
   return { isValid, warningMessage };
 };
 
+// Function to Validate Password
 const isValidPassword = (passwordValue) => {
   let isValid = true,
     warningMessage;
@@ -73,9 +79,12 @@ const isValidPassword = (passwordValue) => {
   return { isValid, warningMessage };
 };
 
+// Function to Validate Form
 const isValidForm = () => {
+  // Assume that All Fields Are Valid
   let isAllFieldsValid = true;
 
+  // Is Username Valid
   let validityStatus = isValidUsername(usernameField.value);
 
   if (!validityStatus.isValid) {
@@ -84,6 +93,7 @@ const isValidForm = () => {
     isAllFieldsValid = false;
   }
 
+  // Is Email Valid
   validityStatus = isValidEmail(emailField.value);
   if (!validityStatus.isValid) {
     emailWarning.textContent = validityStatus.warningMessage;
@@ -91,6 +101,7 @@ const isValidForm = () => {
     isAllFieldsValid = false;
   }
 
+  // Is Password Valid
   validityStatus = isValidPassword(passwordField.value);
   if (!validityStatus.isValid) {
     passwordWarning.textContent = validityStatus.warningMessage;
@@ -101,18 +112,19 @@ const isValidForm = () => {
   return isAllFieldsValid;
 };
 
-let formFeedbackIndicator = document.querySelector(".form-feedback-indicator");
-let isSubmissionOff = false;
-
+// Add Submit Event on Form
 myForm.addEventListener("submit", function (e) {
+  // Prevent Default Behaviour of Auto Submission of Form
   e.preventDefault();
 
   if (!isSubmissionOff) {
     formFeedbackIndicator.style.display = "flex";
     isSubmissionOff = true;
 
+    // Call isValidForm Function to Check Whether  ALl Fields Are Valid or Not (Is Form Valid)
     let formValidationStatus = isValidForm();
 
+    // If True (Form is Valid)
     if (formValidationStatus) {
       formFeedbackIndicator.firstElementChild.classList.add("fa-check");
       formFeedbackIndicator.firstElementChild.classList.remove("fa-xmark");
@@ -136,6 +148,7 @@ myForm.addEventListener("submit", function (e) {
       formFeedbackIndicator.style.setProperty("--color", "rgb(252, 4, 4)");
     }
 
+    // Callback Function to Hide Form Feeback Container or Popup after Showing Feedback
     setTimeout(() => {
       formFeedbackIndicator.classList.remove("animate-form-feedback-indicator");
       formFeedbackIndicator.style.display = "none";
@@ -143,6 +156,8 @@ myForm.addEventListener("submit", function (e) {
       document.querySelectorAll(".warning").forEach((element) => {
         element.style.maxHeight = 0 + "px";
       });
+
+      // Submitting Form If it is Valid
       if (formValidationStatus) {
         myForm.submit();
       }
@@ -150,6 +165,7 @@ myForm.addEventListener("submit", function (e) {
   }
 });
 
+// Adding Focus Event on All Input Fields to Hide Warning Messages when Focused on Input Fields
 inputFields.forEach((element) => {
   element.addEventListener("focus", function () {
     document.querySelectorAll(".warning").forEach((element) => {
@@ -158,6 +174,7 @@ inputFields.forEach((element) => {
   });
 });
 
+// Add Click Event on Password Toggler Icon to Show & Hide the Password
 document.querySelector(".password-toggler").onclick = (e) => {
   if (e.target.classList.contains("fa-eye")) {
     e.target.classList.add("fa-eye-slash");

@@ -62,8 +62,7 @@ const isValidPassword = (passwordValue) => {
     isValid = false;
     warningMessage = "📝 Please enter Password";
   } else {
-    let regex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*])[A-Za-z\d@#$%^&*]{8,}$/;
+    let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$/;
     if (!regex.test(passwordValue)) {
       isValid = false;
       warningMessage =
@@ -158,3 +157,15 @@ inputFields.forEach((element) => {
     });
   });
 });
+
+document.querySelector(".password-toggler").onclick = (e) => {
+  if (e.target.classList.contains("fa-eye")) {
+    e.target.classList.add("fa-eye-slash");
+    e.target.classList.remove("fa-eye");
+    document.querySelector("#password-field").type = "type";
+  } else {
+    e.target.classList.add("fa-eye");
+    e.target.classList.remove("fa-eye-slash");
+    document.querySelector("#password-field").type = "password";
+  }
+};
